@@ -1,0 +1,34 @@
+voicetriage/
+├── run.py                                 ✅ One-click launcher (starts web app)
+├── main.py                                ✅ Core 5-stage triage pipeline + CLI
+├── requirements.txt                       ✅ Python dependencies
+│
+├── knowledge_base/
+│   ├── symptom_specialty_mapping.json     ✅ Symptom-specialty mapping
+│   ├── red_flag_symptoms.json             ✅ Emergency red flag rules
+│   └── triage_guidelines.json            ✅ Teleconsultation triage protocols
+│
+├── pipeline/
+│   ├── stage1_stt.py                      ✅ Speech Processing Layer (Noise + VAD + Whisper)
+│   ├── stage2_extraction.py               ✅ LLM Symptom Extraction (Ollama + fallback)
+│   ├── stage3_rag.py                      ✅ Knowledge Base RAG Retrieval
+│   ├── stage4_decision.py                 ✅ Rule Validation & Urgency Engine
+│   └── stage5_output.py                   ✅ Output & Formatter
+│
+├── webapp/                                ✅ Web Application Dashboard
+│   ├── app.py                             ✅ Flask Backend Server & REST API
+│   ├── templates/
+│   │   └── index.html                     ✅ Dashboard UI Interface
+│   └── static/
+│       ├── css/style.css                  ✅ Responsive Dark Theme Styles
+│       └── js/app.js                      ✅ Frontend Controller & API Client
+│
+├── data/
+│   └── synthetic_transcripts/
+│       ├── cases_hindi.json               ✅ Hindi synthetic dataset (20 cases)
+│       └── cases_regional.json            ✅ Regional language dataset (Marathi, Tamil, Telugu, Bengali)
+│
+├── audio/                                 📁 Patient voice recordings (WAV/MP3/M4A)
+├── output/                                📁 Persisted triage JSON records
+└── tests/
+    └── test_stage1.py                     ✅ Unit tests for Stage 1

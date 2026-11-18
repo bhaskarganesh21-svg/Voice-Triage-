@@ -1,0 +1,40 @@
+{
+  "case_id": "API_E02665DC",
+  "timestamp": "2026-11-18T22:10:09",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.933,
+  "transcript": "I have been having severe crushing chest pain for the past two hours. The pain radiates to my left arm and jaw. I am sweating profusely and breathless.",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Cardiology",
+  "symptoms": [
+    "chest pain",
+    "left arm pain",
+    "breathlessness",
+    "sweating"
+  ],
+  "duration": "2 hours",
+  "severity": "severe",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "male",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: chest pain, left arm pain, breathlessness, sweating. Duration: 2 hours. Severity: severe. Red flags: cardiac_emergency. Multi-symptom rules: Cardiac Cluster. Classified EMERGENCY -- Cardiology required immediately.",
+  "red_flags_triggered": [
+    "cardiac_emergency [triggered: chest pain, breathlessness]"
+  ],
+  "rule_ids_matched": [
+    "RF-CARDIAC_EMERGENCY",
+    "P-CARD-01",
+    "P-RESP-01",
+    "CR-01"
+  ],
+  "rag_rules_retrieved": [
+    "RF-CARDIAC_EMERGENCY",
+    "P-CARD-01",
+    "P-RESP-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

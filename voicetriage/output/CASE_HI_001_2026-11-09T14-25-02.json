@@ -1,0 +1,40 @@
+{
+  "case_id": "CASE_HI_001",
+  "timestamp": "2026-11-09T14:25:02",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 4.191,
+  "transcript": "I have been having severe chest pain for the past two hours. The pain is going to my left arm and I am also sweating. I am also having difficulty breathing. I am very scared.",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Cardiology",
+  "symptoms": [
+    "chest pain",
+    "left arm pain",
+    "breathlessness",
+    "sweating"
+  ],
+  "duration": "2 hours",
+  "severity": "severe",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "male",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: chest pain, left arm pain, breathlessness, sweating. Duration: 2 hours. Severity: severe. Red flags: cardiac_emergency. Multi-symptom rules: Cardiac Cluster. Classified EMERGENCY -- Cardiology required immediately.",
+  "red_flags_triggered": [
+    "cardiac_emergency [triggered: chest pain, breathlessness]"
+  ],
+  "rule_ids_matched": [
+    "CR-01",
+    "P-CARD-01",
+    "RF-CARDIAC_EMERGENCY",
+    "P-RESP-01"
+  ],
+  "rag_rules_retrieved": [
+    "RF-CARDIAC_EMERGENCY",
+    "P-CARD-01",
+    "P-RESP-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

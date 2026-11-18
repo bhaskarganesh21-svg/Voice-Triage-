@@ -1,0 +1,455 @@
+{
+  "_meta": {
+    "dataset": "VoiceTriage Synthetic Hindi Transcripts",
+    "version": "1.0",
+    "language": "Hindi (hi)",
+    "total_cases": 20,
+    "distribution": { "EMERGENCY": 7, "URGENT": 7, "ROUTINE": 6 },
+    "description": "Synthetic patient voice transcripts in Hindi for testing VoiceTriage pipeline. Based on realistic clinical presentations drawn from MoHFW triage protocols.",
+    "created": "2024-01"
+  },
+
+  "cases": [
+
+    {
+      "case_id": "CASE_HI_001",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे पिछले दो घंटे से सीने में बहुत तेज़ दर्द हो रहा है। दर्द बाईं बाँह तक जा रहा है और पसीना भी आ रहा है। साँस लेने में भी दिक्कत हो रही है। मुझे बहुत डर लग रहा है।",
+      "transcript_romanized": "Mujhe pichhle do ghante se seene mein bahut tez dard ho raha hai. Dard baayi baanh tak ja raha hai aur paseena bhi aa raha hai. Saans lene mein bhi dikkat ho rahi hai. Mujhe bahut dar lag raha hai.",
+      "transcript_english": "I have been having severe chest pain for the past two hours. The pain is going to my left arm and I am also sweating. I am also having difficulty breathing. I am very scared.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Cardiology",
+        "symptoms": ["chest pain", "left arm pain", "sweating", "breathlessness"],
+        "duration": "2 hours",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["chest_pain", "left_arm_radiation", "breathlessness", "sweating"],
+        "confidence_expected": 0.90
+      },
+      "clinical_notes": "Classic ACS presentation: chest pain + left arm radiation + diaphoresis + dyspnoea. Rule R-CARDIAC-01 and CR-01 both triggered. EMERGENCY — Cardiology."
+    },
+
+    {
+      "case_id": "CASE_HI_002",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरे पति अचानक से गिर गए। उनका चेहरा एक तरफ से टेढ़ा हो गया है और वो बोल नहीं पा रहे हैं। दायाँ हाथ भी नहीं उठा पा रहे। यह सब अचानक हुआ, करीब पंद्रह मिनट पहले।",
+      "transcript_romanized": "Mere pati achanak se gir gaye. Unka chehra ek taraf se tedha ho gaya hai aur wo bol nahi pa rahe hain. Daayaan haath bhi nahi utha pa rahe. Yeh sab achanak hua, kareeb pandrah minute pehle.",
+      "transcript_english": "My husband suddenly fell down. His face is drooping on one side and he cannot speak. He cannot lift his right arm. This happened suddenly, about fifteen minutes ago.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Neurology",
+        "symptoms": ["face drooping", "inability to speak", "arm weakness", "sudden onset"],
+        "duration": "15 minutes",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "male",
+        "red_flags": ["stroke_FAST", "facial_drooping", "speech_difficulty", "arm_weakness"],
+        "confidence_expected": 0.95
+      },
+      "clinical_notes": "FAST criteria fully met: Face drooping + Arm weakness + Speech difficulty + Sudden onset. Stroke FAST protocol (P-NEURO-01). EMERGENCY — Neurology."
+    },
+
+    {
+      "case_id": "CASE_HI_003",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरी बच्ची को बहुत तेज़ बुखार है, टेम्परेचर  एक सौ चार डिग्री है। उसे झटके भी आ रहे हैं, पाँच मिनट से बंद नहीं हुए। वो बेहोश है, जवाब नहीं दे रही।",
+      "transcript_romanized": "Meri bachchi ko bahut tez bukhar hai, temperature ek sau char degree hai. Use jhatke bhi aa rahe hain, paanch minute se band nahi hue. Wo behosh hai, jawab nahi de rahi.",
+      "transcript_english": "My daughter has very high fever, temperature is 104 degrees. She is also having convulsions that haven't stopped for five minutes. She is unconscious and not responding.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Pediatrics",
+        "symptoms": ["high fever 104F", "convulsions", "unconscious", "unresponsive"],
+        "duration": "5 minutes of seizure",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "female",
+        "red_flags": ["febrile_seizure_ongoing", "unconscious_child", "high_fever_child"],
+        "confidence_expected": 0.93
+      },
+      "clinical_notes": "Child with high fever + ongoing seizure + loss of consciousness. Pediatric Emergency protocol (R-PED-01). Status epilepticus risk. EMERGENCY — Pediatrics."
+    },
+
+    {
+      "case_id": "CASE_HI_004",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मैं सात महीने से गर्भवती हूँ। आज से बहुत ज़्यादा खून आ रहा है, दर्द भी बहुत है। बच्चे की हलचल बंद हो गई है। मुझे डर लग रहा है।",
+      "transcript_romanized": "Main saat mahine se garbhavati hoon. Aaj se bahut zyada khoon aa raha hai, dard bhi bahut hai. Bachche ki halchal band ho gayi hai. Mujhe dar lag raha hai.",
+      "transcript_english": "I am seven months pregnant. I am bleeding heavily since today, there is also a lot of pain. The baby's movement has stopped. I am scared.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Gynecology",
+        "symptoms": ["heavy vaginal bleeding", "severe abdominal pain", "absent fetal movement"],
+        "duration": "few hours",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "female",
+        "red_flags": ["obstetric_bleeding", "absent_fetal_movement", "antepartum_hemorrhage"],
+        "confidence_expected": 0.94
+      },
+      "clinical_notes": "Antepartum haemorrhage (7 months) + absent fetal movement. Obstetric emergency (P-OBS-01, R-OBS-01). EMERGENCY — Gynecology."
+    },
+
+    {
+      "case_id": "CASE_HI_005",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे मरने का मन कर रहा है। मैंने कल रात नींद की गोलियाँ खा ली थीं, पूरी शीशी। अब मेरा पेट दर्द कर रहा है और मुझे उल्टी आ रही है। मैं बहुत थक गया हूँ ज़िंदगी से।",
+      "transcript_romanized": "Mujhe marne ka mann kar raha hai. Maine kal raat neend ki goliyan kha li thin, poori shishi. Ab mera pet dard kar raha hai aur mujhe ulti aa rahi hai. Main bahut thak gaya hoon zindagi se.",
+      "transcript_english": "I feel like dying. Last night I took sleeping pills, the whole bottle. Now my stomach is hurting and I am vomiting. I am very tired of life.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Psychiatry",
+        "symptoms": ["suicidal ideation", "drug overdose", "abdominal pain", "vomiting"],
+        "duration": "since last night",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "male",
+        "red_flags": ["suicide_attempt", "overdose", "suicidal_ideation"],
+        "confidence_expected": 0.97
+      },
+      "clinical_notes": "Completed suicide attempt via overdose with active suicidal ideation. Psychiatric + medical emergency (R-PSYCH-01). Do NOT leave alone. EMERGENCY — Psychiatry."
+    },
+
+    {
+      "case_id": "CASE_HI_006",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरे दादाजी को साँप ने काट लिया है। उनका हाथ सूज गया है और वो बेहोश हो रहे हैं। हम गाँव में हैं, यहाँ कोई अस्पताल नहीं है।",
+      "transcript_romanized": "Mere dadaji ko saanp ne kaat liya hai. Unka haath sooj gaya hai aur wo behosh ho rahe hain. Hum gaon mein hain, yahan koi aspatal nahi hai.",
+      "transcript_english": "A snake has bitten my grandfather. His hand is swollen and he is becoming unconscious. We are in a village, there is no hospital here.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Emergency",
+        "symptoms": ["snake bite", "swelling at bite site", "losing consciousness"],
+        "duration": "recent",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "male",
+        "red_flags": ["snake_bite", "altered_consciousness", "anaphylaxis_risk"],
+        "confidence_expected": 0.96
+      },
+      "clinical_notes": "Snakebite with progressive swelling and altered consciousness — envenomation. Anti-venom needed urgently. EMERGENCY — Emergency."
+    },
+
+    {
+      "case_id": "CASE_HI_007",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरी माँ की शुगर बहुत गिर गई है, मशीन पर कुछ नहीं आया — सिर्फ LO लिख रहा है। वो बेहोश हैं, कुछ पी भी नहीं सकतीं। वो डायबिटिक हैं और आज खाना नहीं खाया।",
+      "transcript_romanized": "Meri maa ki sugar bahut gir gayi hai, machine par kuch nahi aaya — sirf LO likh raha hai. Wo behosh hain, kuch pi bhi nahi saktin. Wo diabetic hain aur aaj khana nahi khaya.",
+      "transcript_english": "My mother's sugar has dropped very low, the machine only shows LO. She is unconscious and cannot drink anything. She is diabetic and did not eat today.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Endocrinology",
+        "symptoms": ["severe hypoglycemia", "unconscious", "blood sugar LO", "unable to swallow"],
+        "duration": "recent",
+        "severity": "severe",
+        "existing_diseases": ["diabetes"],
+        "age": null,
+        "gender": "female",
+        "red_flags": ["severe_hypoglycemia", "unconscious_diabetic", "cannot_take_oral"],
+        "confidence_expected": 0.95
+      },
+      "clinical_notes": "Severe hypoglycemia with loss of consciousness. Cannot give oral glucose — IV dextrose needed immediately. R-DM-01. EMERGENCY — Endocrinology."
+    },
+
+    {
+      "case_id": "CASE_HI_008",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे पाँच दिन से बुखार है, सौ दो डिग्री के आसपास। शरीर में बहुत दर्द है। कल से त्वचा पर लाल चकत्ते भी आ गए हैं और मसूड़ों से थोड़ा खून भी आया। बहुत कमज़ोरी है।",
+      "transcript_romanized": "Mujhe paanch din se bukhar hai, sau do degree ke aaspaas. Sharir mein bahut dard hai. Kal se twacha par laal chakte bhi aa gaye hain aur masoodon se thoda khoon bhi aaya. Bahut kamzori hai.",
+      "transcript_english": "I have had fever for five days, around 102 degrees. There is a lot of body pain. Since yesterday, red spots have appeared on the skin and gums are slightly bleeding. Very weak.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "GeneralMedicine",
+        "symptoms": ["fever 5 days", "body pain", "skin rash", "gum bleeding", "weakness"],
+        "duration": "5 days",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["fever_with_rash", "fever_with_bleeding"],
+        "confidence_expected": 0.85
+      },
+      "clinical_notes": "Dengue fever suspected: prolonged fever + body pain + rash + bleeding signs. R-FEVER-01 triggered. Monitor platelet count urgently. URGENT — General Medicine."
+    },
+
+    {
+      "case_id": "CASE_HI_009",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे अचानक बहुत तेज़ सिरदर्द हुआ, जैसे सिर में किसी ने बम फोड़ा हो। यह दर्द मेरी ज़िंदगी का सबसे तेज़ दर्द है। गर्दन भी अकड़ी हुई है और रोशनी से बहुत तकलीफ है।",
+      "transcript_romanized": "Mujhe achanak bahut tez sardard hua, jaise sir mein kisne ne bomb phoda ho. Yeh dard meri zindagi ka sabse tez dard hai. Gardan bhi akdi hui hai aur roshni se bahut takleef hai.",
+      "transcript_english": "I suddenly had a very severe headache, as if someone exploded a bomb in my head. This is the worst pain of my life. The neck is also stiff and there is a lot of discomfort from light.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Neurology",
+        "symptoms": ["thunderclap headache", "worst headache of life", "neck stiffness", "photophobia"],
+        "duration": "sudden onset",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["thunderclap_headache", "meningismus", "subarachnoid_hemorrhage_risk"],
+        "confidence_expected": 0.92
+      },
+      "clinical_notes": "Thunderclap headache + neck stiffness + photophobia = meningitis/SAH until proven otherwise. CR-04 composite rule triggered. EMERGENCY — Neurology."
+    },
+
+    {
+      "case_id": "CASE_HI_010",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे दो हफ्ते से खाँसी है जो रुक नहीं रही। रात को पसीना आता है और वज़न भी घटा है। कल खाँसी में थोड़ा खून भी आया। मैं पचास साल का हूँ।",
+      "transcript_romanized": "Mujhe do hafte se khansi hai jo ruk nahi rahi. Raat ko paseena aata hai aur wajan bhi ghata hai. Kal khansi mein thoda khoon bhi aaya. Main pachas saal ka hoon.",
+      "transcript_english": "I have had a cough for two weeks that won't stop. I sweat at night and have also lost weight. Yesterday there was a little blood in the cough. I am fifty years old.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Pulmonology",
+        "symptoms": ["cough 2 weeks", "night sweats", "weight loss", "hemoptysis"],
+        "duration": "2 weeks",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": 50,
+        "gender": "male",
+        "red_flags": ["cough_with_blood", "TB_suspicion"],
+        "confidence_expected": 0.88
+      },
+      "clinical_notes": "Classic TB triad: cough >2 weeks + night sweats + weight loss + hemoptysis. CR-05 rule triggered. Urgent evaluation + sputum AFB. URGENT — Pulmonology."
+    },
+
+    {
+      "case_id": "CASE_HI_011",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरे पेट में बहुत तेज़ दर्द है, बिल्कुल बर्दाश्त नहीं हो रहा। उल्टी भी आई। पेट छूने से और भी दर्द होता है। बुखार भी है। यह दर्द नाभि के पास से शुरू होकर नीचे दाईं तरफ गया।",
+      "transcript_romanized": "Mere pet mein bahut tez dard hai, bilkul bardasht nahi ho raha. Ulti bhi aayi. Pet chhoone se aur bhi dard hota hai. Bukhar bhi hai. Yeh dard naabhi ke paas se shuru hokar neeche daai taraf gaya.",
+      "transcript_english": "I have very severe pain in my stomach, totally unbearable. I also vomited. Touching the stomach makes the pain worse. Also have fever. The pain started near the navel and moved to the lower right.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Gastroenterology",
+        "symptoms": ["severe abdominal pain", "vomiting", "rebound tenderness", "fever", "pain migrating to RLQ"],
+        "duration": "few hours",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["appendicitis_suspicion", "peritoneal_signs"],
+        "confidence_expected": 0.87
+      },
+      "clinical_notes": "Migratory pain to RLQ + rebound tenderness + fever + vomiting = classic appendicitis. Risk of perforation. URGENT (borderline EMERGENCY) — Gastroenterology."
+    },
+
+    {
+      "case_id": "CASE_HI_012",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे बहुत घबराहट हो रही है, दिल की धड़कन तेज़ है, साँस नहीं आ रही ठीक से। मुझे लग रहा है मैं मर जाऊँगी। यह पहले भी होता है, अचानक आता है और कुछ मिनट में चला जाता है। डॉक्टर ने पहले कहा था पैनिक अटैक है।",
+      "transcript_romanized": "Mujhe bahut ghabrahaat ho rahi hai, dil ki dhadkan tez hai, saans nahi aa rahi theek se. Mujhe lag raha hai main mar jaungi. Yeh pehle bhi hota hai, achanak aata hai aur kuch minute mein chala jaata hai. Doctor ne pehle kaha tha panic attack hai.",
+      "transcript_english": "I am very anxious, my heart is beating fast, not breathing properly. I feel like I will die. This has happened before, comes suddenly and goes away in a few minutes. A doctor had previously said it was a panic attack.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Psychiatry",
+        "symptoms": ["palpitations", "breathlessness", "anxiety", "panic attack", "fear of dying"],
+        "duration": "episodic — recurring",
+        "severity": "moderate",
+        "existing_diseases": ["panic disorder (diagnosed)"],
+        "age": null,
+        "gender": "female",
+        "red_flags": [],
+        "confidence_expected": 0.78
+      },
+      "clinical_notes": "Panic disorder with recurrent attacks. Must rule out cardiac cause first. URGENT (low threshold given cardiac-like symptoms) — Psychiatry / Cardiology."
+    },
+
+    {
+      "case_id": "CASE_HI_013",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरे पेशाब में जलन है और बार-बार पेशाब आ रहा है। बुखार भी है — करीब एक सौ डिग्री। पेट के नीचे दर्द है। दो दिन से है।",
+      "transcript_romanized": "Mere peshab mein jalan hai aur baar-baar peshab aa raha hai. Bukhar bhi hai — kareeb ek sau degree. Pet ke neeche dard hai. Do din se hai.",
+      "transcript_english": "I have burning during urination and frequent urination. I also have a fever — around 100 degrees. There is pain in the lower abdomen. It has been two days.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Urology",
+        "symptoms": ["burning urination", "frequent urination", "fever 100F", "lower abdominal pain"],
+        "duration": "2 days",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["UTI_with_fever"],
+        "confidence_expected": 0.82
+      },
+      "clinical_notes": "UTI with fever suggests pyelonephritis (kidney involvement). Needs urine culture + antibiotics urgently. URGENT — Urology."
+    },
+
+    {
+      "case_id": "CASE_HI_014",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे कमर के दाईं तरफ बहुत तेज़ दर्द है जो आता-जाता रहता है। दर्द कमर से नीचे जाँघ तक जाता है। उल्टी भी हुई है। पेशाब में थोड़ा खून भी आया।",
+      "transcript_romanized": "Mujhe kamar ke daai taraf bahut tez dard hai jo aata-jaata rehta hai. Dard kamar se neeche jaangh tak jaata hai. Ulti bhi hui hai. Peshab mein thoda khoon bhi aaya.",
+      "transcript_english": "I have very severe pain on the right side of my lower back, coming and going. The pain goes from the lower back down to the thigh. I also vomited. There was a little blood in the urine.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Urology",
+        "symptoms": ["colicky flank pain", "right-sided", "radiating to thigh", "vomiting", "hematuria"],
+        "duration": "few hours",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["renal_colic", "hematuria"],
+        "confidence_expected": 0.89
+      },
+      "clinical_notes": "Renal colic: colicky flank pain + radiation to groin + hematuria. Kidney stone likely. Pain management + imaging urgent. URGENT — Urology."
+    },
+
+    {
+      "case_id": "CASE_HI_015",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे दो दिन से ज़ुकाम है और गले में दर्द है। हल्का बुखार है — निन्यानबे डिग्री। नाक बह रही है। कोई खास तकलीफ नहीं है बस थकान है।",
+      "transcript_romanized": "Mujhe do din se zukam hai aur gale mein dard hai. Halka bukhar hai — ninyanabe degree. Naak beh rahi hai. Koi khaas takleef nahi hai bas thakaan hai.",
+      "transcript_english": "I have had a cold for two days and a sore throat. There is a mild fever — 99 degrees. Runny nose. No particular problem, just fatigue.",
+      "ground_truth": {
+        "urgency": "ROUTINE",
+        "specialty": "GeneralMedicine",
+        "symptoms": ["cold", "sore throat", "low-grade fever 99F", "runny nose", "fatigue"],
+        "duration": "2 days",
+        "severity": "mild",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": [],
+        "confidence_expected": 0.88
+      },
+      "clinical_notes": "Classic viral URTI. No red flags. Symptomatic management. ROUTINE — General Medicine."
+    },
+
+    {
+      "case_id": "CASE_HI_016",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरे घुटनों में बहुत दर्द है, खासकर सुबह उठने के बाद। चलने में तकलीफ होती है। यह पिछले तीन महीनों से है। मैं पचपन साल की हूँ।",
+      "transcript_romanized": "Mere ghutnon mein bahut dard hai, khaskar subah uthne ke baad. Chalne mein takleef hoti hai. Yeh pichhle teen mahinon se hai. Main pachpan saal ki hoon.",
+      "transcript_english": "I have a lot of pain in my knees, especially after waking up in the morning. I have difficulty walking. This has been going on for three months. I am fifty-five years old.",
+      "ground_truth": {
+        "urgency": "ROUTINE",
+        "specialty": "Orthopedics",
+        "symptoms": ["knee pain bilateral", "morning stiffness", "difficulty walking"],
+        "duration": "3 months",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": 55,
+        "gender": "female",
+        "red_flags": [],
+        "confidence_expected": 0.85
+      },
+      "clinical_notes": "Chronic bilateral knee pain with morning stiffness in middle-aged woman — likely osteoarthritis. No emergency signs. ROUTINE — Orthopedics."
+    },
+
+    {
+      "case_id": "CASE_HI_017",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरी आँखें लाल हैं, खुजली हो रही है और पानी आ रहा है। सुबह से उठकर आँखें चिपकी हुई थीं। कोई दर्द नहीं है। दो दिन से है।",
+      "transcript_romanized": "Meri aankhein laal hain, khujli ho rahi hai aur paani aa raha hai. Subah se uthkar aankhein chipki hui thin. Koi dard nahi hai. Do din se hai.",
+      "transcript_english": "My eyes are red, itching and watering. When I woke up in the morning, my eyes were stuck together. No pain. It has been two days.",
+      "ground_truth": {
+        "urgency": "ROUTINE",
+        "specialty": "Ophthalmology",
+        "symptoms": ["red eyes", "itching", "watering", "eye discharge", "morning crusting"],
+        "duration": "2 days",
+        "severity": "mild",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": [],
+        "confidence_expected": 0.87
+      },
+      "clinical_notes": "Conjunctivitis (infective/allergic): red eye + discharge + itching, no pain, no vision change. ROUTINE — Ophthalmology."
+    },
+
+    {
+      "case_id": "CASE_HI_018",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे पिछले महीने से पीरियड नहीं आया। पेट में हल्का दर्द है। मैं बाईस साल की हूँ। घर पर प्रेगनेंसी टेस्ट किया — पॉजिटिव आया।",
+      "transcript_romanized": "Mujhe pichhle mahine se period nahi aaya. Pet mein halka dard hai. Main baais saal ki hoon. Ghar par pregnancy test kiya — positive aaya.",
+      "transcript_english": "I have not had my period since last month. There is mild abdominal pain. I am twenty-two years old. I did a home pregnancy test — it came positive.",
+      "ground_truth": {
+        "urgency": "ROUTINE",
+        "specialty": "Gynecology",
+        "symptoms": ["missed period", "mild abdominal pain", "positive pregnancy test"],
+        "duration": "1 month",
+        "severity": "mild",
+        "existing_diseases": [],
+        "age": 22,
+        "gender": "female",
+        "red_flags": [],
+        "confidence_expected": 0.82
+      },
+      "clinical_notes": "Positive pregnancy test, missed period, mild pain — likely early normal pregnancy. Needs antenatal booking. No emergency signs. ROUTINE — Gynecology."
+    },
+
+    {
+      "case_id": "CASE_HI_019",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मुझे बहुत उदासी लग रही है पिछले दो महीने से। नींद नहीं आती, खाना नहीं खाया जाता। किसी से बात करने का मन नहीं। मेरे मन में अभी मरने के विचार नहीं हैं, बस सब कुछ बेकार लगता है।",
+      "transcript_romanized": "Mujhe bahut udaasi lag rahi hai pichhle do mahine se. Neend nahi aati, khana nahi khaya jaata. Kisi se baat karne ka mann nahi. Mere mann mein abhi marne ke vichaar nahi hain, bas sab kuch bekaar lagta hai.",
+      "transcript_english": "I have been feeling very sad for the past two months. I cannot sleep, cannot eat. I do not feel like talking to anyone. I do not have thoughts of dying right now, but everything feels pointless.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Psychiatry",
+        "symptoms": ["depression", "insomnia", "loss of appetite", "social withdrawal", "anhedonia"],
+        "duration": "2 months",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": [],
+        "confidence_expected": 0.80
+      },
+      "clinical_notes": "Moderate depression — 2 months, multiple symptoms, no active suicidal ideation currently (but risk). Needs psychiatric assessment. URGENT — Psychiatry."
+    },
+
+    {
+      "case_id": "CASE_HI_020",
+      "language": "hi",
+      "language_name": "Hindi",
+      "transcript": "मेरी त्वचा पर लाल-लाल खुजलीदार चकत्ते हो गए हैं। कल एक नई दवाई ली थी। चकत्ते तेजी से फैल रहे हैं और थोड़ी सूजन भी है। साँस ठीक है।",
+      "transcript_romanized": "Meri twacha par laal-laal khujlidar chakte ho gaye hain. Kal ek nayi dawai li thi. Chakte teji se phail rahe hain aur thodi sujan bhi hai. Saans theek hai.",
+      "transcript_english": "I have red itchy rashes on my skin. Yesterday I took a new medicine. The rashes are spreading rapidly and there is also some swelling. Breathing is fine.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Dermatology",
+        "symptoms": ["drug rash", "rapidly spreading rash", "itching", "swelling"],
+        "duration": "since yesterday",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["drug_reaction", "rapidly_spreading_rash"],
+        "confidence_expected": 0.83
+      },
+      "clinical_notes": "Drug-induced urticaria/allergic reaction — rapidly spreading. Breathing OK now but monitor for anaphylaxis progression. URGENT — Dermatology. Escalate immediately if breathing worsens."
+    }
+
+  ]
+}

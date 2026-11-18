@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoiceTriage · AI Pre-Call Triage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="glow"></div>
+<header>
+  <div class="brand"><span class="logo">⚕</span><div><b>VoiceTriage</b><small>eSanjeevani · AI Pre-Call Triage</small></div></div>
+  <nav><span class="pill" id="health"><i></i>Connecting…</span>
+    <button class="ghost" data-drawer="stats">Stats</button>
+    <button class="ghost" data-drawer="history">History</button></nav>
+</header>
+<main>
+  <section class="card input">
+    <div class="tabs"><button class="on" data-tab="voice">Speak</button><button data-tab="text">Type</button><button data-tab="demo">Demo</button></div>
+    <label class="lbl">Language</label>
+    <select id="lang">
+      <option value="hi">हिन्दी · Hindi</option><option value="en">English</option><option value="mr">मराठी · Marathi</option>
+      <option value="ta">தமிழ் · Tamil</option><option value="te">తెలుగు · Telugu</option><option value="bn">বাংলা · Bengali</option>
+    </select>
+    <div class="pane on" id="p-voice">
+      <button id="mic" class="mic" aria-label="Start speaking">🎙</button>
+      <p id="micHint" class="hint">Tap the mic and describe your symptoms</p>
+      <div id="live" class="live" placeholder="Your words appear here…"></div>
+    </div>
+    <div class="pane" id="p-text"><textarea id="txt" rows="6" placeholder="Describe the patient's symptoms…"></textarea></div>
+    <div class="pane" id="p-demo"><div id="cases" class="cases">Loading cases…</div></div>
+    <button id="run" class="primary">Run triage</button>
+  </section>
+  <section class="card result" id="result">
+    <div class="empty"><div class="big">🩺</div><h2>Ready for triage</h2><p>Speak, type or pick a demo case.<br>You’ll get urgency, specialist and reasoning in seconds.</p></div>
+  </section>
+</main>
+<aside id="drawer"><button class="close" id="dClose">✕</button><h3 id="dTitle"></h3><div id="dBody"></div></aside>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

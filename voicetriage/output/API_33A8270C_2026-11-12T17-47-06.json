@@ -1,0 +1,45 @@
+{
+  "case_id": "API_33A8270C",
+  "timestamp": "2026-11-12T17:47:06",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 4.201,
+  "transcript": "Cold,Mild nose run , sneezing , and fever from 2 hours",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "Green",
+  "suggested_specialty": "Pediatrics",
+  "symptoms": [
+    "fever",
+    "cold"
+  ],
+  "duration": "2 hours",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: fever, cold. Duration: 2 hours. Severity: mild. Red flags: pediatric_emergency, urgent_fever. Classified EMERGENCY -- Pediatrics required immediately.",
+  "red_flags_triggered": [
+    "pediatric_emergency [triggered: fever]",
+    "urgent_fever [triggered: fever]",
+    "severe_pain [triggered: fever]"
+  ],
+  "rule_ids_matched": [
+    "P-PED-01",
+    "RF-URGENT_FEVER",
+    "P-FEVER-01",
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-SEVERE_PAIN",
+    "P-INF-01"
+  ],
+  "rag_rules_retrieved": [
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "RF-SEVERE_PAIN",
+    "P-FEVER-01",
+    "P-PED-01",
+    "P-INF-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

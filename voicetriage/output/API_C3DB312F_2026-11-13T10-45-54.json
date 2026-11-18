@@ -1,0 +1,46 @@
+{
+  "case_id": "API_C3DB312F",
+  "timestamp": "2026-11-13T10:45:54",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.629,
+  "transcript": "chronic cough for three weeks with blood",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Emergency",
+  "symptoms": [
+    "cough",
+    "bleeding"
+  ],
+  "duration": "3 weeks",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: cough, bleeding. Duration: 3 weeks. Severity: mild. Red flags: bleeding_emergency, trauma_emergency. Classified EMERGENCY -- Emergency required immediately.",
+  "red_flags_triggered": [
+    "bleeding_emergency [triggered: cough, bleeding]",
+    "trauma_emergency [triggered: bleeding]",
+    "obstetric_emergency [triggered: bleeding]",
+    "urgent_fever [triggered: bleeding]"
+  ],
+  "rule_ids_matched": [
+    "RF-BLEEDING_EMERGENCY",
+    "RF-OBSTETRIC_EMERGENCY",
+    "P-INF-01",
+    "P-OBS-01",
+    "RF-TRAUMA_EMERGENCY",
+    "RF-URGENT_FEVER"
+  ],
+  "rag_rules_retrieved": [
+    "RF-BLEEDING_EMERGENCY",
+    "RF-TRAUMA_EMERGENCY",
+    "RF-OBSTETRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "P-OBS-01",
+    "P-INF-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

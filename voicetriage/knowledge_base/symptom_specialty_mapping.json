@@ -1,0 +1,323 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "source": "Derived from MoHFW Teleconsultation Guidelines, WHO ICD-10, and clinical triage protocols",
+    "last_updated": "2024-01",
+    "description": "Maps symptoms to suggested medical specialties for pre-call triage routing"
+  },
+
+  "specialties": {
+
+    "Cardiology": {
+      "description": "Heart and cardiovascular system disorders",
+      "keywords_en": [
+        "chest pain", "chest tightness", "chest pressure", "chest discomfort",
+        "heart pain", "heart attack", "palpitations", "irregular heartbeat",
+        "rapid heartbeat", "slow heartbeat", "shortness of breath on exertion",
+        "breathlessness", "difficulty breathing", "sweating with chest pain",
+        "left arm pain", "jaw pain with chest pain", "heart failure",
+        "swelling in legs", "ankle swelling", "edema", "fainting",
+        "syncope", "blackout", "high blood pressure", "hypertension",
+        "low blood pressure", "hypotension", "blood pressure problem",
+        "heart disease", "cardiac arrest", "angina", "aortic pain",
+        "cyanosis", "bluish lips", "cold sweats", "nocturnal dyspnea"
+      ],
+      "keywords_hi": [
+        "seene mein dard", "dil mein dard", "seene mein jalan", "seene mein dababav",
+        "dhadkan tej", "dhadkan kam", "sans lene mein takleef", "paseena aana",
+        "baah mein dard", "behoshi", "uchcha blood pressure", "neecha blood pressure",
+        "pair mein sujan", "dil ki bimari", "dil ka daura"
+      ],
+      "urgency_weight": 0.9,
+      "common_red_flags": ["chest pain", "breathlessness", "syncope", "palpitations"]
+    },
+
+    "Neurology": {
+      "description": "Brain, spinal cord, and nervous system disorders",
+      "keywords_en": [
+        "severe headache", "worst headache of life", "thunderclap headache",
+        "headache with fever", "headache with neck stiffness", "migraine",
+        "seizure", "fit", "convulsion", "epilepsy",
+        "stroke", "facial drooping", "arm weakness", "slurred speech",
+        "sudden numbness", "tingling", "one-sided weakness", "paralysis",
+        "dizziness", "vertigo", "spinning sensation", "loss of balance",
+        "loss of consciousness", "fainting", "blackout", "unconscious",
+        "memory loss", "confusion", "disorientation", "dementia",
+        "tremors", "shaking", "Parkinson", "multiple sclerosis",
+        "vision changes", "double vision", "blurred vision", "vision loss",
+        "hearing loss", "ringing in ears", "tinnitus",
+        "difficulty walking", "gait problems", "coordination problems"
+      ],
+      "keywords_hi": [
+        "sar mein tej dard", "mirgi", "jhatkam aana", "chehra tedha",
+        "haath mein kamzori", "bolne mein takleef", "chakkar aana",
+        "behoshi", "yaad na rehna", "kaanpna", "sunai nahi dena"
+      ],
+      "urgency_weight": 0.85,
+      "common_red_flags": ["seizure", "stroke", "loss of consciousness", "severe headache"]
+    },
+
+    "Pulmonology": {
+      "description": "Lungs and respiratory system disorders",
+      "keywords_en": [
+        "cough", "persistent cough", "cough with blood", "hemoptysis",
+        "difficulty breathing", "shortness of breath", "breathlessness at rest",
+        "wheezing", "asthma", "asthma attack", "bronchitis",
+        "pneumonia", "chest infection", "TB", "tuberculosis",
+        "coughing for weeks", "night sweats with cough", "weight loss with cough",
+        "COPD", "chronic obstructive", "oxygen level low", "SpO2 low",
+        "respiratory failure", "choking", "blue lips", "gasping",
+        "rapid breathing", "labored breathing", "pleural pain",
+        "pulmonary embolism", "blood clot in lung"
+      ],
+      "keywords_hi": [
+        "khansi", "khansi mein khoon", "sans lena mushkil", "saans phoolna",
+        "andar se awaaz aana", "TB", "rajrog", "seene mein dard sans ke saath"
+      ],
+      "urgency_weight": 0.8,
+      "common_red_flags": ["breathlessness at rest", "cough with blood", "low oxygen", "choking"]
+    },
+
+    "Gastroenterology": {
+      "description": "Digestive system disorders",
+      "keywords_en": [
+        "abdominal pain", "stomach pain", "stomach ache", "belly pain",
+        "severe abdominal pain", "abdominal cramps", "bloating",
+        "vomiting blood", "hematemesis", "blood in stool", "black stool",
+        "melena", "diarrhea", "loose stools", "dysentery",
+        "constipation", "nausea", "vomiting", "indigestion",
+        "acid reflux", "heartburn", "GERD", "ulcer",
+        "jaundice", "yellow skin", "yellow eyes", "liver problem",
+        "hepatitis", "liver failure", "ascites", "liver disease",
+        "pancreatitis", "gallstones", "appendicitis", "bowel obstruction",
+        "rectal bleeding", "anal bleeding", "hemorrhoids",
+        "loss of appetite", "difficulty swallowing", "dysphagia"
+      ],
+      "keywords_hi": [
+        "pet mein dard", "ulti mein khoon", "pakhane mein khoon", "kaala pakhana",
+        "dast", "kabz", "ulti", "paila parna", "aankhon mein peelापन",
+        "liver ki takleef", "khana nahi khaya jaata"
+      ],
+      "urgency_weight": 0.7,
+      "common_red_flags": ["vomiting blood", "blood in stool", "severe abdominal pain", "jaundice"]
+    },
+
+    "Orthopedics": {
+      "description": "Bones, joints, and musculoskeletal disorders",
+      "keywords_en": [
+        "joint pain", "knee pain", "hip pain", "shoulder pain", "ankle pain",
+        "wrist pain", "elbow pain", "back pain", "lower back pain",
+        "neck pain", "spine pain", "bone pain", "fracture", "broken bone",
+        "swollen joint", "stiff joint", "arthritis", "rheumatoid arthritis",
+        "osteoarthritis", "gout", "muscle pain", "muscle cramp",
+        "sports injury", "fall injury", "accident injury", "dislocation",
+        "ligament tear", "tendon pain", "slip disc", "sciatica",
+        "pain walking", "unable to walk", "limping", "deformity"
+      ],
+      "keywords_hi": [
+        "haath dard", "pair dard", "ghutne mein dard", "kamar dard",
+        "haddi mein dard", "haddi tooti", "sujan haath pair mein",
+        "chalne mein takleef", "jodon ka dard"
+      ],
+      "urgency_weight": 0.5,
+      "common_red_flags": ["fracture", "dislocation", "severe trauma", "inability to bear weight"]
+    },
+
+    "GeneralMedicine": {
+      "description": "General symptoms and common illnesses not requiring specialist",
+      "keywords_en": [
+        "fever", "high temperature", "cold", "cough and cold",
+        "body ache", "fatigue", "weakness", "tiredness",
+        "runny nose", "blocked nose", "sore throat", "throat pain",
+        "flu", "influenza", "viral infection", "malaria",
+        "dengue", "typhoid", "chikungunya", "common cold",
+        "mild headache", "general weakness", "weight loss",
+        "weight gain", "excessive thirst", "frequent urination",
+        "sugar problem", "diabetes symptoms", "thyroid"
+      ],
+      "keywords_hi": [
+        "bukhaar", "sardard", "khansi aur zukam", "badan dard",
+        "thakan", "kamzori", "naak behna", "gale mein dard",
+        "bhookh nahi", "wajan ghatna", "paani zyada peena"
+      ],
+      "urgency_weight": 0.3,
+      "common_red_flags": ["high fever (>104F)", "fever with rash", "fever with stiff neck"]
+    },
+
+    "Dermatology": {
+      "description": "Skin, hair, and nail disorders",
+      "keywords_en": [
+        "skin rash", "rash", "itching", "skin itching", "hives",
+        "urticaria", "eczema", "psoriasis", "skin allergy",
+        "acne", "pimples", "boil", "abscess", "skin infection",
+        "fungal infection", "ringworm", "scabies",
+        "hair loss", "alopecia", "dandruff", "scalp problem",
+        "nail infection", "nail problem", "wart", "mole",
+        "skin color change", "skin darkening", "vitiligo",
+        "wound", "non-healing wound", "ulcer on skin", "burns"
+      ],
+      "keywords_hi": [
+        "twacha par daane", "khujali", "chakte", "chamdi ki takleef",
+        "baal girna", "nakhoon ki takleef", "jalan twacha mein"
+      ],
+      "urgency_weight": 0.3,
+      "common_red_flags": ["anaphylaxis rash", "rapidly spreading rash", "burn"]
+    },
+
+    "Ophthalmology": {
+      "description": "Eye disorders",
+      "keywords_en": [
+        "eye pain", "eye redness", "red eye", "eye discharge",
+        "blurred vision", "vision loss", "sudden vision loss",
+        "double vision", "eye swelling", "eye infection",
+        "conjunctivitis", "pink eye", "cataract", "glaucoma",
+        "flashes of light", "floaters", "dark spots in vision",
+        "eye injury", "foreign body in eye", "itchy eyes",
+        "watery eyes", "dry eyes", "sensitivity to light"
+      ],
+      "keywords_hi": [
+        "aankhon mein dard", "aankhon mein lali", "dhundhla dikhna",
+        "aankhon se paani aana", "aankhon mein sujan", "drishti kamzor"
+      ],
+      "urgency_weight": 0.65,
+      "common_red_flags": ["sudden vision loss", "eye injury", "painful red eye"]
+    },
+
+    "ENT": {
+      "description": "Ear, Nose, and Throat disorders",
+      "keywords_en": [
+        "ear pain", "ear ache", "ear discharge", "hearing loss",
+        "ringing in ears", "tinnitus", "ear infection",
+        "nose bleed", "epistaxis", "blocked nose", "sinus pain",
+        "sinusitis", "snoring", "sleep apnea",
+        "throat pain", "tonsil", "tonsillitis", "difficulty swallowing",
+        "hoarse voice", "voice change", "loss of voice", "laryngitis",
+        "neck swelling", "lymph node swelling", "thyroid swelling"
+      ],
+      "keywords_hi": [
+        "kaan mein dard", "kaan se paani", "sunai nahi dena",
+        "naak se khoon", "naak band", "gale mein dard", "awaaz baiThna"
+      ],
+      "urgency_weight": 0.4,
+      "common_red_flags": ["nose bleed severe", "sudden hearing loss", "throat obstruction"]
+    },
+
+    "Psychiatry": {
+      "description": "Mental health and psychiatric disorders",
+      "keywords_en": [
+        "depression", "sadness", "hopelessness", "suicidal thoughts",
+        "anxiety", "panic attack", "excessive worry", "fear",
+        "mental health", "stress", "emotional breakdown",
+        "hallucinations", "hearing voices", "schizophrenia",
+        "bipolar", "mood swings", "mania",
+        "sleep problem", "insomnia", "not sleeping",
+        "eating disorder", "anorexia", "overeating",
+        "anger issues", "violent behavior", "self-harm",
+        "addiction", "alcohol problem", "drug problem"
+      ],
+      "keywords_hi": [
+        "udaasi", "marne ka mann", "neend nahi", "ghabrahaat",
+        "dar lagna", "awaazen sunna", "maanasik takleef", "tension"
+      ],
+      "urgency_weight": 0.75,
+      "common_red_flags": ["suicidal thoughts", "self-harm", "violent behavior", "psychosis"]
+    },
+
+    "Gynecology": {
+      "description": "Female reproductive health disorders",
+      "keywords_en": [
+        "period problem", "irregular periods", "heavy bleeding",
+        "missed period", "no period", "painful periods",
+        "vaginal discharge", "vaginal infection", "itching down there",
+        "pregnancy", "pregnant", "prenatal", "antenatal",
+        "pregnancy pain", "pregnancy bleeding", "abortion",
+        "ovarian cyst", "PCOS", "polycystic ovary",
+        "uterus problem", "fibroid", "endometriosis",
+        "breast pain", "breast lump", "nipple discharge",
+        "menopause", "hot flashes", "post-menopausal bleeding"
+      ],
+      "keywords_hi": [
+        "mahavari mein takleef", "mahavari nahi aayi", "garbhavastha mein dard",
+        "pet mein dard mahila", "stan mein dard", "saafai nahi"
+      ],
+      "urgency_weight": 0.65,
+      "common_red_flags": ["heavy vaginal bleeding", "pregnancy pain", "post-menopausal bleeding"]
+    },
+
+    "Urology": {
+      "description": "Urinary tract and kidney disorders",
+      "keywords_en": [
+        "urine problem", "painful urination", "burning urination",
+        "urinary tract infection", "UTI", "frequent urination",
+        "blood in urine", "hematuria", "cloudy urine",
+        "kidney stone", "kidney pain", "flank pain",
+        "unable to urinate", "urine retention",
+        "prostate problem", "enlarged prostate",
+        "kidney failure", "dialysis", "swelling due to kidney"
+      ],
+      "keywords_hi": [
+        "peshab mein jalan", "baar baar peshab", "peshab mein khoon",
+        "pathri", "peshab nahi ho raha", "gurshe ka dard"
+      ],
+      "urgency_weight": 0.6,
+      "common_red_flags": ["blood in urine", "urine retention", "severe flank pain", "kidney failure"]
+    },
+
+    "Endocrinology": {
+      "description": "Hormonal and metabolic disorders",
+      "keywords_en": [
+        "diabetes", "sugar level high", "sugar level low",
+        "hypoglycemia", "hyperglycemia", "diabetic emergency",
+        "thyroid problem", "hypothyroid", "hyperthyroid",
+        "weight gain without eating", "excessive weight gain",
+        "excessive sweating", "heat intolerance",
+        "growth problem", "hormonal imbalance",
+        "adrenal problem", "cortisol", "Cushing"
+      ],
+      "keywords_hi": [
+        "sugar ki takleef", "sugar bahut zyada", "sugar bahut kam",
+        "thyroid ki bimari", "wajan zyada badhna"
+      ],
+      "urgency_weight": 0.55,
+      "common_red_flags": ["diabetic coma", "severe hypoglycemia", "thyroid storm"]
+    },
+
+    "Pediatrics": {
+      "description": "Children's health disorders (under 18)",
+      "keywords_en": [
+        "child fever", "baby fever", "infant fever", "high fever in child",
+        "child not eating", "baby not drinking milk", "child vomiting",
+        "child diarrhea", "child cough", "child breathless",
+        "child rash", "child convulsion", "child fit", "febrile seizure",
+        "child unconscious", "child crying continuously",
+        "newborn problem", "jaundice in newborn", "low weight baby",
+        "growth delay", "vaccination", "child development"
+      ],
+      "keywords_hi": [
+        "bacche ko bukhaar", "bachcha doodh nahi pi raha", "bacche ko ulti",
+        "bacche ko daure", "navajaata shishu", "bacche ki khansi"
+      ],
+      "urgency_weight": 0.8,
+      "common_red_flags": ["infant fever", "febrile seizure", "child unconscious", "baby not feeding"]
+    },
+
+    "Emergency": {
+      "description": "Immediate life-threatening conditions requiring emergency care",
+      "keywords_en": [
+        "unconscious", "not breathing", "cardiac arrest", "heart stopped",
+        "severe bleeding", "heavy blood loss", "choking", "poisoning",
+        "overdose", "snake bite", "animal bite", "trauma",
+        "road accident", "fall from height", "fire burns", "electric shock",
+        "drowning", "near drowning", "anaphylaxis", "severe allergic reaction",
+        "sudden collapse", "stroke symptoms", "suicidal attempt"
+      ],
+      "keywords_hi": [
+        "behosh hai", "sans nahi aa rahi", "bahut khoon nikal raha",
+        "saanp ne kaata", "zahar kha liya", "sadak durghatna",
+        "aag se jala", "bijli lagi", "daube gaye"
+      ],
+      "urgency_weight": 1.0,
+      "common_red_flags": ["all symptoms in this category are red flags"]
+    }
+  }
+}

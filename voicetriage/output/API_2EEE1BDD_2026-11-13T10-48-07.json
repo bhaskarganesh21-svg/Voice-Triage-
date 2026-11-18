@@ -1,0 +1,43 @@
+{
+  "case_id": "API_2EEE1BDD",
+  "timestamp": "2026-11-13T10:48:07",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.002,
+  "transcript": "I have severe feelings of hopelessness and took multiple sleeping pills with suicidal intent.",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Emergency",
+  "symptoms": [
+    "vomiting",
+    "suicidal"
+  ],
+  "duration": "unknown",
+  "severity": "severe",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: vomiting, suicidal. Severity: severe. Red flags: bleeding_emergency, psychiatric_emergency. Classified EMERGENCY -- Emergency required immediately.",
+  "red_flags_triggered": [
+    "bleeding_emergency [triggered: vomiting]",
+    "psychiatric_emergency [triggered: suicidal]",
+    "diabetic_emergency [triggered: vomiting]"
+  ],
+  "rule_ids_matched": [
+    "RF-BLEEDING_EMERGENCY",
+    "P-PSYCH-01",
+    "P-GI-01",
+    "RF-DIABETIC_EMERGENCY",
+    "RF-PSYCHIATRIC_EMERGENCY"
+  ],
+  "rag_rules_retrieved": [
+    "RF-BLEEDING_EMERGENCY",
+    "RF-PSYCHIATRIC_EMERGENCY",
+    "RF-DIABETIC_EMERGENCY",
+    "P-PSYCH-01",
+    "P-GI-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

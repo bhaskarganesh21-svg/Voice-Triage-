@@ -1,0 +1,38 @@
+{
+  "case_id": "VOICE_1A1EDB6EB99",
+  "timestamp": "2026-11-18T13:42:30",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.556,
+  "transcript": "I am having headache for 2 hours",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Neurology",
+  "symptoms": [
+    "headache"
+  ],
+  "duration": "2 hours",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "male",
+  "confidence_score": 0.98,
+  "explanation": "Patient described: headache. Duration: 2 hours. Severity: mild. Red flags: neurological_emergency, obstetric_emergency. Classified EMERGENCY -- Neurology required immediately.",
+  "red_flags_triggered": [
+    "neurological_emergency [triggered: headache]",
+    "obstetric_emergency [triggered: headache]",
+    "urgent_fever [triggered: headache]"
+  ],
+  "rule_ids_matched": [
+    "RF-NEUROLOGICAL_EMERGENCY",
+    "RF-OBSTETRIC_EMERGENCY",
+    "RF-URGENT_FEVER"
+  ],
+  "rag_rules_retrieved": [
+    "RF-NEUROLOGICAL_EMERGENCY",
+    "RF-OBSTETRIC_EMERGENCY",
+    "RF-URGENT_FEVER"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

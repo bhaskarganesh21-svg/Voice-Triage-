@@ -1,0 +1,30 @@
+# VoiceTriage — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Core Web Framework
+flask>=3.0.0
+flask-cors>=4.0.0
+gunicorn>=21.0.0
+
+# ── Speech Processing
+faster-whisper>=1.0.0
+noisereduce>=3.0.0
+librosa>=0.10.0
+soundfile>=0.12.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# ── Audio recording (optional, for microphone input)
+pyaudio>=0.2.13
+
+# ── NLP / LLM (via Ollama REST API - no pip install needed for Ollama itself)
+requests>=2.31.0
+
+# ── RAG / Vector DB (Phase 2 upgrade)
+# chromadb>=0.4.0
+# sentence-transformers>=2.2.0
+# llama-index>=0.10.0
+
+# ── Utilities
+python-dotenv>=1.0.0
+python-multipart>=0.0.6

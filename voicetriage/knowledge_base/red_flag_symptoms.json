@@ -1,0 +1,317 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "source": "WHO Emergency Triage Guidelines, MoHFW Teleconsultation Protocols, AIIMS Emergency Protocols",
+    "description": "Red flag symptoms that indicate emergency or urgent triage regardless of other context",
+    "last_updated": "2024-01"
+  },
+
+  "urgency_levels": {
+    "EMERGENCY": {
+      "label": "🔴 Emergency",
+      "description": "Immediate life-threatening. Must connect to emergency services or doctor NOW.",
+      "response_time": "Immediate (<5 minutes)",
+      "action": "Alert emergency operator immediately. Do not queue."
+    },
+    "URGENT": {
+      "label": "🟡 Urgent",
+      "description": "Potentially serious. Needs doctor within 1 hour.",
+      "response_time": "Within 1 hour",
+      "action": "Prioritize in queue. Ensure doctor callback within 60 minutes."
+    },
+    "ROUTINE": {
+      "label": "🟢 Routine",
+      "description": "Non-urgent. Can wait for scheduled consultation.",
+      "response_time": "Within 24 hours",
+      "action": "Normal queue. Schedule next available appointment."
+    }
+  },
+
+  "red_flags": {
+
+    "cardiac_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Cardiology",
+      "symptoms_en": [
+        "chest pain", "chest tightness", "chest pressure",
+        "chest pain with sweating", "chest pain with breathlessness",
+        "chest pain radiating to arm", "chest pain radiating to jaw",
+        "sudden severe chest pain", "crushing chest pain",
+        "cardiac arrest", "heart stopped", "no heartbeat",
+        "heart attack", "myocardial infarction"
+      ],
+      "symptoms_hi": [
+        "seene mein tej dard", "seene mein dababaav", "dil ka daura",
+        "seene mein dard aur paseena", "seene mein dard aur sans ki takleef"
+      ],
+      "rule": "R-CARDIAC-01",
+      "reasoning": "Acute chest pain with associated symptoms (sweating, breathlessness, arm/jaw radiation) strongly indicates Acute Coronary Syndrome — medical emergency."
+    },
+
+    "respiratory_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Pulmonology",
+      "symptoms_en": [
+        "severe difficulty breathing", "cannot breathe", "unable to breathe",
+        "choking", "airway obstruction", "throat closing",
+        "bluish lips", "blue face", "cyanosis",
+        "gasping", "breathing stopped", "no breathing",
+        "respiratory arrest", "oxygen level very low",
+        "SpO2 below 90", "SpO2 below 85"
+      ],
+      "symptoms_hi": [
+        "bilkul sans nahi aa rahi", "dum ghut raha hai", "honth neele pad rahe hain",
+        "gala band ho raha", "sans ruk gayi"
+      ],
+      "rule": "R-RESP-01",
+      "reasoning": "Complete or near-complete airway obstruction or respiratory failure is immediately life-threatening. Seconds matter."
+    },
+
+    "neurological_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Neurology",
+      "symptoms_en": [
+        "stroke", "FAST symptoms", "sudden facial drooping", "face drooping",
+        "sudden arm weakness", "arm cannot move suddenly",
+        "sudden speech problem", "cannot speak suddenly", "slurred speech suddenly",
+        "sudden loss of consciousness", "sudden collapse",
+        "active seizure", "prolonged seizure", "seizure not stopping",
+        "status epilepticus", "thunderclap headache",
+        "worst headache of life", "sudden severe headache",
+        "sudden vision loss", "sudden blindness",
+        "sudden balance loss", "sudden vertigo with neurological signs"
+      ],
+      "symptoms_hi": [
+        "achanak chehra tedha", "haath achanak nahi utha pa raha",
+        "bolna band ho gaya achanak", "behosh ho gaya", "mirgi nahi ruk rahi",
+        "sar mein achanak bahut tej dard", "aankhon se achanak dikhai dena band"
+      ],
+      "rule": "R-NEURO-01",
+      "reasoning": "Stroke symptoms (FAST), prolonged seizure, and sudden severe headache (subarachnoid hemorrhage sign) require immediate intervention. Brain damage occurs within minutes."
+    },
+
+    "bleeding_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Emergency",
+      "symptoms_en": [
+        "vomiting blood", "vomiting large amounts of blood",
+        "blood in stool with dizziness", "heavy rectal bleeding",
+        "severe vaginal bleeding", "bleeding not stopping",
+        "large wound bleeding", "trauma with severe bleeding",
+        "coughing up large amounts of blood",
+        "uncontrolled bleeding", "blood loss", "hemorrhage"
+      ],
+      "symptoms_hi": [
+        "ulti mein bahut khoon", "pakhane mein bahut khoon",
+        "khoon bahut nikal raha", "khoon band nahi ho raha"
+      ],
+      "rule": "R-BLEED-01",
+      "reasoning": "Uncontrolled or severe bleeding leads to hypovolemic shock. Immediate intervention required."
+    },
+
+    "anaphylaxis": {
+      "urgency": "EMERGENCY",
+      "specialty": "Emergency",
+      "symptoms_en": [
+        "severe allergic reaction", "anaphylaxis", "throat swelling after eating",
+        "face swelling with breathing difficulty", "hives with difficulty breathing",
+        "allergic reaction to medicine", "bee sting with swelling",
+        "snake bite", "animal bite with swelling"
+      ],
+      "symptoms_hi": [
+        "dawai khane ke baad sujan", "khaane ke baad gala band",
+        "twacha par daane aur sans ki takleef", "saanp ne kaata"
+      ],
+      "rule": "R-ALLERGY-01",
+      "reasoning": "Anaphylaxis can cause fatal airway closure within minutes. Epinephrine needed immediately."
+    },
+
+    "trauma_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Emergency",
+      "symptoms_en": [
+        "road accident", "vehicle accident", "hit by vehicle",
+        "fall from height", "fall from building", "fall from ladder",
+        "head injury with unconsciousness", "head injury bleeding",
+        "spinal injury", "cannot move after fall",
+        "severe burns", "burns on face or hands", "chemical burns",
+        "electric shock", "electrocution",
+        "drowning", "near drowning", "water accident",
+        "gunshot wound", "stab wound"
+      ],
+      "symptoms_hi": [
+        "sadak durghatna", "gaadi ki takkar", "uupar se gira",
+        "sar mein chot aur behoshi", "aag se jala", "bijli lagi", "paani mein doobye"
+      ],
+      "rule": "R-TRAUMA-01",
+      "reasoning": "High-mechanism trauma can cause internal injuries not visible externally. Requires immediate evaluation."
+    },
+
+    "psychiatric_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Psychiatry",
+      "symptoms_en": [
+        "suicidal thoughts", "want to die", "thinking of killing myself",
+        "suicide attempt", "tried to kill myself", "overdose attempt",
+        "self-harm", "cutting myself", "violent behavior",
+        "threatening to hurt others", "psychosis", "lost contact with reality",
+        "aggressive behavior with weapon"
+      ],
+      "symptoms_hi": [
+        "marne ka mann kar raha", "khud ko nuksaan pahunchana chahta hoon",
+        "zahar kha liya", "khud ko kaata", "maarna chahta hoon"
+      ],
+      "rule": "R-PSYCH-01",
+      "reasoning": "Active suicidal or homicidal ideation requires immediate psychiatric intervention. Patient safety at immediate risk."
+    },
+
+    "pediatric_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Pediatrics",
+      "symptoms_en": [
+        "infant not breathing", "baby not breathing", "newborn not breathing",
+        "baby unconscious", "infant unconscious",
+        "baby turning blue", "infant cyanosis",
+        "baby not moving", "infant unresponsive",
+        "febrile seizure ongoing", "child fit not stopping",
+        "infant fever above 38C", "newborn fever", "baby very high fever",
+        "infant not feeding for 12 hours", "baby refusing all feeds",
+        "child poisoning", "child swallowed something dangerous"
+      ],
+      "symptoms_hi": [
+        "bachche ne sans lena band kiya", "bachcha behosh hai",
+        "shishu ko bukhaar aur daure", "navajaata ko bukhaar",
+        "baccha kuch bhi kha pi nahi raha", "bacche ne kuch kha liya"
+      ],
+      "rule": "R-PED-01",
+      "reasoning": "Children, especially infants, decompensate rapidly. Any concerning sign in a newborn/infant is an emergency until proven otherwise."
+    },
+
+    "obstetric_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Gynecology",
+      "symptoms_en": [
+        "pregnant with severe bleeding", "heavy vaginal bleeding in pregnancy",
+        "pregnant and cannot feel baby moving", "baby not moving in womb",
+        "pregnant with severe abdominal pain", "labor pain at home",
+        "baby coming out at home", "cord prolapse",
+        "pregnant with high blood pressure and headache",
+        "eclampsia", "seizure in pregnancy", "fits in pregnancy",
+        "postpartum heavy bleeding"
+      ],
+      "symptoms_hi": [
+        "garbhavati mein bahut khoon", "pet mein dard garbhavastha mein",
+        "bachcha ghum nahi raha pet mein", "seezure garbhavastha mein",
+        "prasav ke baad bahut khoon"
+      ],
+      "rule": "R-OBS-01",
+      "reasoning": "Obstetric emergencies (APH, eclampsia, cord prolapse) have high maternal and fetal mortality if not managed immediately."
+    },
+
+    "diabetic_emergency": {
+      "urgency": "EMERGENCY",
+      "specialty": "Endocrinology",
+      "symptoms_en": [
+        "diabetic unconscious", "diabetic not responding",
+        "hypoglycemia severe", "sugar very low unconscious",
+        "diabetic coma", "diabetic shock",
+        "sugar level very low", "sugar below 50", "sugar below 40",
+        "diabetic with vomiting and cannot eat",
+        "DKA symptoms", "diabetic ketoacidosis"
+      ],
+      "symptoms_hi": [
+        "sugar bahut kam ho gayi behosh", "diabetic ko hosh nahi",
+        "sugar drop se behoshi", "DKA"
+      ],
+      "rule": "R-DM-01",
+      "reasoning": "Severe hypoglycemia and DKA can cause irreversible brain damage or death if untreated."
+    },
+
+    "urgent_fever": {
+      "urgency": "URGENT",
+      "specialty": "GeneralMedicine",
+      "symptoms_en": [
+        "fever above 104F", "fever above 40C", "very high fever",
+        "fever with rash", "fever with stiff neck", "fever with light sensitivity",
+        "fever with confusion", "fever not reducing with medicine",
+        "dengue symptoms", "malaria symptoms", "fever with bleeding",
+        "fever with yellow eyes", "fever with severe headache"
+      ],
+      "symptoms_hi": [
+        "bahut zyada bukhaar", "bukhaar aur gardan akad gayi",
+        "bukhaar aur daane", "bukhaar mein behoshi", "malaria ke lakshan"
+      ],
+      "rule": "R-FEVER-01",
+      "reasoning": "High fever with associated warning signs may indicate sepsis, meningitis, malaria, or dengue — all require urgent evaluation."
+    },
+
+    "severe_pain": {
+      "urgency": "URGENT",
+      "specialty": "GeneralMedicine",
+      "symptoms_en": [
+        "severe pain rating 9 out of 10", "worst pain ever",
+        "unbearable pain", "excruciating pain",
+        "severe kidney stone pain", "renal colic",
+        "severe abdominal pain with rigidity", "board-like abdomen",
+        "severe back pain with fever", "severe testicular pain"
+      ],
+      "symptoms_hi": [
+        "bahut tej dard, bardasht nahi ho raha", "dard mein tadap raha hoon",
+        "pet mein bahut tej dard aur kadakhat"
+      ],
+      "rule": "R-PAIN-01",
+      "reasoning": "Severe, uncontrolled pain often signals a serious underlying condition (renal colic, peritonitis, etc.) requiring urgent evaluation."
+    }
+  },
+
+  "composite_rules": {
+    "description": "When multiple symptoms occur together, escalate urgency",
+    "rules": [
+      {
+        "rule_id": "CR-01",
+        "name": "Cardiac Cluster",
+        "trigger_symptoms": ["chest pain", "breathlessness", "sweating"],
+        "required_count": 2,
+        "escalate_to": "EMERGENCY",
+        "specialty": "Cardiology",
+        "reasoning": "Chest pain + breathlessness/sweating cluster = high probability ACS"
+      },
+      {
+        "rule_id": "CR-02",
+        "name": "Stroke FAST",
+        "trigger_symptoms": ["face drooping", "arm weakness", "speech difficulty", "sudden onset"],
+        "required_count": 2,
+        "escalate_to": "EMERGENCY",
+        "specialty": "Neurology",
+        "reasoning": "FAST criteria: 2+ symptoms = stroke until proven otherwise"
+      },
+      {
+        "rule_id": "CR-03",
+        "name": "Sepsis Triad",
+        "trigger_symptoms": ["fever", "confusion", "rapid breathing"],
+        "required_count": 2,
+        "escalate_to": "URGENT",
+        "specialty": "GeneralMedicine",
+        "reasoning": "Fever + altered mentation + respiratory distress suggests sepsis"
+      },
+      {
+        "rule_id": "CR-04",
+        "name": "Meningitis Triad",
+        "trigger_symptoms": ["fever", "severe headache", "neck stiffness", "light sensitivity"],
+        "required_count": 3,
+        "escalate_to": "EMERGENCY",
+        "specialty": "Neurology",
+        "reasoning": "Classic meningitis triad — immediately life-threatening"
+      },
+      {
+        "rule_id": "CR-05",
+        "name": "TB Suspicion",
+        "trigger_symptoms": ["cough for more than 2 weeks", "night sweats", "weight loss", "blood in sputum"],
+        "required_count": 2,
+        "escalate_to": "URGENT",
+        "specialty": "Pulmonology",
+        "reasoning": "TB classic presentation — needs urgent evaluation and contact tracing"
+      }
+    ]
+  }
+}

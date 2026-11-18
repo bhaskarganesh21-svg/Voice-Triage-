@@ -1,0 +1,46 @@
+{
+  "case_id": "API_D9DAB66B",
+  "timestamp": "2026-11-18T10:11:05",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 2.781,
+  "transcript": "i am having cough and fever in this couple of 2-3 days also my chest is paining",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Emergency",
+  "symptoms": [
+    "fever",
+    "cough"
+  ],
+  "duration": "3 days",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "male",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: fever, cough. Duration: 3 days. Severity: mild. Red flags: bleeding_emergency, pediatric_emergency. Classified EMERGENCY -- Emergency required immediately.",
+  "red_flags_triggered": [
+    "bleeding_emergency [triggered: cough]",
+    "pediatric_emergency [triggered: fever]",
+    "urgent_fever [triggered: fever]",
+    "severe_pain [triggered: fever]"
+  ],
+  "rule_ids_matched": [
+    "P-FEVER-01",
+    "RF-BLEEDING_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "P-PED-01",
+    "RF-SEVERE_PAIN",
+    "RF-PEDIATRIC_EMERGENCY"
+  ],
+  "rag_rules_retrieved": [
+    "RF-BLEEDING_EMERGENCY",
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "RF-SEVERE_PAIN",
+    "P-FEVER-01",
+    "P-PED-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

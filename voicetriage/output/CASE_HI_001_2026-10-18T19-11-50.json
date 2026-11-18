@@ -1,0 +1,67 @@
+{
+  "case_id": "CASE_HI_001",
+  "timestamp": "2026-10-18T19:11:50",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 4.243,
+  "transcript": "I have been having severe chest pain for the past two hours. The pain is going to my left arm and I am also sweating. I am also having difficulty breathing. I am very scared.",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "suggested_specialty": "Cardiology",
+  "symptoms": [
+    "chest pain",
+    "breathlessness",
+    "sweating"
+  ],
+  "duration": "2 hours",
+  "severity": "severe",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "male",
+  "confidence_score": 0.91,
+  "reason": "Patient described: chest pain, breathlessness, sweating. Symptoms present for 2 hours. Severity assessed as severe. Red flag rules triggered: cardiac_emergency. Multi-symptom rules matched: Cardiac Cluster. Marked EMERGENCY: immediate specialist attention required — Cardiology.",
+  "red_flags_triggered": [
+    "cardiac_emergency (triggered by: chest pain, breathlessness)"
+  ],
+  "rules_matched": [
+    "P-CARD-01",
+    "CR-01",
+    "RF-CARDIAC_EMERGENCY",
+    "P-RESP-01"
+  ],
+  "rag_rules_retrieved": [
+    {
+      "rule_id": "RF-CARDIAC_EMERGENCY",
+      "rule_name": "cardiac_emergency",
+      "urgency": "EMERGENCY",
+      "specialty": "Cardiology",
+      "reasoning": "Acute chest pain with associated symptoms (sweating, breathlessness, arm/jaw radiation) strongly indicates Acute Coronary Syndrome — medical emergency.",
+      "matched_on": [
+        "chest pain",
+        "breathlessness",
+        "sweating"
+      ]
+    },
+    {
+      "rule_id": "P-CARD-01",
+      "rule_name": "Acute Chest Pain Protocol",
+      "urgency": "EMERGENCY",
+      "specialty": "Cardiology",
+      "reasoning": "Any patient describing chest pain, especially with: radiation to arm/jaw, sweating, breathlessness, or nausea.",
+      "matched_on": [
+        "chest pain",
+        "breathlessness"
+      ]
+    },
+    {
+      "rule_id": "P-RESP-01",
+      "rule_name": "Respiratory Distress Protocol",
+      "urgency": "EMERGENCY",
+      "specialty": "Pulmonology",
+      "reasoning": "Patient unable to complete sentences due to breathlessness, bluish lips, or SpO2 < 90%.",
+      "matched_on": [
+        "chest pain",
+        "breathlessness"
+      ]
+    }
+  ]
+}

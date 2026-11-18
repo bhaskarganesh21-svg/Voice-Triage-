@@ -1,0 +1,49 @@
+{
+  "case_id": "API_D3B4EC5E",
+  "timestamp": "2026-11-12T17:47:23",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 4.526,
+  "transcript": "Mild runny nose, sneezing, and slight sore throat for two days without high fever or difficulty breathing.",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Cardiology",
+  "symptoms": [
+    "breathlessness",
+    "fever",
+    "high fever",
+    "cold",
+    "sore throat"
+  ],
+  "duration": "2 days",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: breathlessness, fever, high fever, cold, sore throat. Duration: 2 days. Severity: mild. Red flags: cardiac_emergency, pediatric_emergency. Classified EMERGENCY -- Cardiology required immediately.",
+  "red_flags_triggered": [
+    "cardiac_emergency [triggered: breathlessness, breathlessness]",
+    "pediatric_emergency [triggered: fever, high fever]",
+    "urgent_fever [triggered: fever, high fever]",
+    "severe_pain [triggered: fever]"
+  ],
+  "rule_ids_matched": [
+    "RF-URGENT_FEVER",
+    "P-RESP-01",
+    "P-CARD-01",
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-SEVERE_PAIN",
+    "RF-CARDIAC_EMERGENCY"
+  ],
+  "rag_rules_retrieved": [
+    "RF-CARDIAC_EMERGENCY",
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "RF-SEVERE_PAIN",
+    "P-CARD-01",
+    "P-RESP-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

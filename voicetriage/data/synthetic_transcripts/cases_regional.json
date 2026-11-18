@@ -1,0 +1,235 @@
+{
+  "_meta": {
+    "dataset": "VoiceTriage Synthetic Regional Language Transcripts",
+    "version": "1.0",
+    "languages": ["Marathi (mr)", "Tamil (ta)", "Telugu (te)", "Bengali (bn)"],
+    "total_cases": 10,
+    "distribution": { "EMERGENCY": 4, "URGENT": 4, "ROUTINE": 2 },
+    "purpose": "Tests pipeline robustness across non-Hindi Indian languages. Validates that STT + LLM handles linguistic diversity.",
+    "created": "2024-01"
+  },
+
+  "cases": [
+
+    {
+      "case_id": "CASE_MR_001",
+      "language": "mr",
+      "language_name": "Marathi",
+      "transcript": "माझ्या छातीत खूप दुखतंय. श्वास घेताना त्रास होतोय. घाम येतोय. मला खूप भीती वाटतेय.",
+      "transcript_romanized": "Majhya chhati t khup dukhantay. Shwaas gheta na traas hotoye. Ghaam yetoye. Mala khup bhiti vatateye.",
+      "transcript_english": "My chest is hurting a lot. I am having trouble breathing. I am sweating. I am very scared.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Cardiology",
+        "symptoms": ["chest pain", "breathlessness", "sweating"],
+        "duration": "acute",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["chest_pain", "breathlessness", "diaphoresis"],
+        "confidence_expected": 0.90
+      },
+      "clinical_notes": "Cardiac emergency triad in Marathi. Tests language detection and symptom extraction across languages. Same clinical urgency as CASE_HI_001."
+    },
+
+    {
+      "case_id": "CASE_MR_002",
+      "language": "mr",
+      "language_name": "Marathi",
+      "transcript": "माझ्या मुलाला खूप ताप आहे, एकशे चार डिग्री. तो बेशुद्ध पडलाय आणि झटके येत आहेत. तो पाच वर्षांचा आहे.",
+      "transcript_romanized": "Majhya mulala khup taap aahe, ekashe char degree. To beshudh padlay aani jhatke yet aahet. To paach varshanche aahe.",
+      "transcript_english": "My son has a very high fever, one hundred and four degrees. He has lost consciousness and is having convulsions. He is five years old.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Pediatrics",
+        "symptoms": ["high fever 104F", "unconscious", "convulsions"],
+        "duration": "acute",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": 5,
+        "gender": "male",
+        "red_flags": ["febrile_seizure", "unconscious_child"],
+        "confidence_expected": 0.93
+      },
+      "clinical_notes": "Same pediatric emergency as CASE_HI_003 but in Marathi. Validates cross-language emergency detection."
+    },
+
+    {
+      "case_id": "CASE_MR_003",
+      "language": "mr",
+      "language_name": "Marathi",
+      "transcript": "मला तीन दिवसांपासून खूप ताप आहे. पोटावर लाल डाग आले आहेत. हिरड्यांमधून थोडं रक्त येतंय. खूप अशक्त वाटतंय.",
+      "transcript_romanized": "Mala teen divasampasun khup taap aahe. Potavar laal daag aale aahet. Hiradyanmadun thoda rakt yetay. Khup ashakt vaatatay.",
+      "transcript_english": "I have had very high fever for three days. Red spots have appeared on the abdomen. There is a little blood from the gums. Feeling very weak.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "GeneralMedicine",
+        "symptoms": ["fever 3 days", "skin rash", "gum bleeding", "weakness"],
+        "duration": "3 days",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["fever_with_rash", "fever_with_bleeding"],
+        "confidence_expected": 0.84
+      },
+      "clinical_notes": "Dengue fever suspicion in Marathi. URGENT — General Medicine."
+    },
+
+    {
+      "case_id": "CASE_MR_004",
+      "language": "mr",
+      "language_name": "Marathi",
+      "transcript": "गुडघ्यात दोन महिन्यांपासून दुखतंय. सकाळी उठल्यावर जास्त त्रास होतो. मी पन्नास वर्षांची आहे.",
+      "transcript_romanized": "Gudghyat don mahinyanpasun dukhantay. Sakali uthlyavar jaast traas hoto. Mi panna varshachi aahe.",
+      "transcript_english": "My knee has been hurting for two months. It hurts more when I wake up in the morning. I am fifty years old.",
+      "ground_truth": {
+        "urgency": "ROUTINE",
+        "specialty": "Orthopedics",
+        "symptoms": ["knee pain", "morning stiffness"],
+        "duration": "2 months",
+        "severity": "mild",
+        "existing_diseases": [],
+        "age": 50,
+        "gender": "female",
+        "red_flags": [],
+        "confidence_expected": 0.84
+      },
+      "clinical_notes": "Routine knee OA in Marathi. Should map to Orthopedics. Tests ROUTINE classification in regional language."
+    },
+
+    {
+      "case_id": "CASE_TA_001",
+      "language": "ta",
+      "language_name": "Tamil",
+      "transcript": "என் கணவருக்கு திடீரென்று முகம் ஒரு பக்கம் சாய்ந்துவிட்டது. கை தூக்க முடியவில்லை. பேச முடியவில்லை. இது சுமார் பத்து நிமிடங்களுக்கு முன்பு ஆனது.",
+      "transcript_romanized": "En kanavarukku thideerenbadhu mugam oru pakkam saainthu vittathu. Kai thooka mudiyavillai. Peasa mudiyavillai. Ithu sumaar pathu nimidam mun aanathu.",
+      "transcript_english": "My husband's face has suddenly drooped to one side. He cannot lift his arm. He cannot speak. This happened about ten minutes ago.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Neurology",
+        "symptoms": ["facial drooping", "arm weakness", "speech difficulty", "sudden onset"],
+        "duration": "10 minutes",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "male",
+        "red_flags": ["stroke_FAST", "facial_drooping", "arm_weakness", "speech_difficulty"],
+        "confidence_expected": 0.94
+      },
+      "clinical_notes": "Stroke FAST criteria in Tamil. Tests Dravidian language handling. EMERGENCY — Neurology."
+    },
+
+    {
+      "case_id": "CASE_TA_002",
+      "language": "ta",
+      "language_name": "Tamil",
+      "transcript": "எனக்கு மூன்று வாரங்களாக இருமல் இருக்கிறது. இரவில் வியர்வை வருகிறது. எடை குறைந்திருக்கிறது. நேற்று கொஞ்சம் இரத்தம் இருமலில் வந்தது.",
+      "transcript_romanized": "Enakku moondru varankalaga irumal irukitathu. Iravil viyarva varukitathu. Edai kurandirukkitathu. Netru kondam irattam irumalil vandathu.",
+      "transcript_english": "I have had a cough for three weeks. I sweat at night. I have lost weight. Yesterday there was a little blood in the cough.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Pulmonology",
+        "symptoms": ["cough 3 weeks", "night sweats", "weight loss", "hemoptysis"],
+        "duration": "3 weeks",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["TB_suspicion", "cough_with_blood"],
+        "confidence_expected": 0.87
+      },
+      "clinical_notes": "TB triad in Tamil. Validates CR-05 composite rule. URGENT — Pulmonology."
+    },
+
+    {
+      "case_id": "CASE_TE_001",
+      "language": "te",
+      "language_name": "Telugu",
+      "transcript": "నాకు రెండు గంటల నుండి ఛాతీలో చాలా నొప్పిగా ఉంది. చెమట పడుతోంది. శ్వాస తీసుకోవడం కష్టంగా ఉంది. భయంగా ఉంది.",
+      "transcript_romanized": "Naaku rendu gantala nundi chaatilo chala noppiga undi. Chemata padutundi. Swasa theesukkovadaniki kashtanga undi. Bhayanga undi.",
+      "transcript_english": "I have been having severe chest pain for two hours. I am sweating. It is difficult to breathe. I am scared.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Cardiology",
+        "symptoms": ["chest pain", "sweating", "breathlessness"],
+        "duration": "2 hours",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["chest_pain", "breathlessness", "diaphoresis"],
+        "confidence_expected": 0.91
+      },
+      "clinical_notes": "Cardiac emergency in Telugu. Tests South Indian language (non-Dravidian Tamil, Dravidian Telugu) handling. EMERGENCY — Cardiology."
+    },
+
+    {
+      "case_id": "CASE_TE_002",
+      "language": "te",
+      "language_name": "Telugu",
+      "transcript": "నాకు నాలుగు రోజుల నుండి జ్వరం ఉంది. శరీరమంతా నొప్పి. కళ్ళు పసుపు రంగులో ఉన్నాయి. పొట్ట నొప్పిగా ఉంది.",
+      "transcript_romanized": "Naaku naalugu roja nundi jvaram undi. Shariramanth noppi. Kalllu pasupu rangulo unnaayi. Potta noppiga undi.",
+      "transcript_english": "I have had a fever for four days. My whole body hurts. My eyes are yellow. My stomach is hurting.",
+      "ground_truth": {
+        "urgency": "URGENT",
+        "specialty": "Gastroenterology",
+        "symptoms": ["fever 4 days", "body pain", "jaundice", "abdominal pain"],
+        "duration": "4 days",
+        "severity": "moderate",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["jaundice_with_fever"],
+        "confidence_expected": 0.84
+      },
+      "clinical_notes": "Jaundice with fever — hepatitis or leptospirosis likely. URGENT — Gastroenterology."
+    },
+
+    {
+      "case_id": "CASE_BN_001",
+      "language": "bn",
+      "language_name": "Bengali",
+      "transcript": "আমার বুকে খুব ব্যথা হচ্ছে। শ্বাস নিতে কষ্ট হচ্ছে। ঘাম হচ্ছে। বাম হাতে ব্যথা যাচ্ছে।",
+      "transcript_romanized": "Aamar buke khub byatha hocche. Shwaas nite koshto hocche. Ghaam hocche. Baam haate byatha jacche.",
+      "transcript_english": "My chest is hurting a lot. I am having trouble breathing. I am sweating. Pain is going to the left arm.",
+      "ground_truth": {
+        "urgency": "EMERGENCY",
+        "specialty": "Cardiology",
+        "symptoms": ["chest pain", "breathlessness", "sweating", "left arm pain"],
+        "duration": "acute",
+        "severity": "severe",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": ["chest_pain", "left_arm_radiation", "breathlessness"],
+        "confidence_expected": 0.92
+      },
+      "clinical_notes": "ACS presentation in Bengali (Eastern India). Tests language diversity. EMERGENCY — Cardiology."
+    },
+
+    {
+      "case_id": "CASE_BN_002",
+      "language": "bn",
+      "language_name": "Bengali",
+      "transcript": "আমার সর্দি কাশি হয়েছে দুদিন ধরে। হালকা জ্বর আছে — নিরানব্বই ডিগ্রি। গলা ব্যথা আছে। বিশেষ কোনো সমস্যা নেই।",
+      "transcript_romanized": "Aamar sordi kashi hoyeche du-din dhore. Halka jor aache — niranobboy degree. Gola byatha aache. Bishesh kono shomosya nei.",
+      "transcript_english": "I have had a cold and cough for two days. There is a mild fever — ninety-nine degrees. I have a sore throat. No special problems.",
+      "ground_truth": {
+        "urgency": "ROUTINE",
+        "specialty": "GeneralMedicine",
+        "symptoms": ["cold", "cough", "low-grade fever 99F", "sore throat"],
+        "duration": "2 days",
+        "severity": "mild",
+        "existing_diseases": [],
+        "age": null,
+        "gender": "unknown",
+        "red_flags": [],
+        "confidence_expected": 0.87
+      },
+      "clinical_notes": "Common cold in Bengali. Should correctly classify as ROUTINE. Tests that mild cases are not over-triaged."
+    }
+
+  ]
+}

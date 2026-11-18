@@ -1,0 +1,51 @@
+{
+  "case_id": "API_71660521",
+  "timestamp": "2026-11-18T10:15:07",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.644,
+  "transcript": "I have had a chronic cough for over three weeks with blood-tinged sputum, night sweats, and unexplained weight loss.",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Cardiology",
+  "symptoms": [
+    "sweating",
+    "cough",
+    "bleeding",
+    "weight loss",
+    "night sweats"
+  ],
+  "duration": "3 weeks",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: sweating, cough, bleeding, weight loss, night sweats. Duration: 3 weeks. Severity: mild. Red flags: cardiac_emergency, bleeding_emergency. Multi-symptom rules: TB Suspicion. Classified EMERGENCY -- Cardiology required immediately.",
+  "red_flags_triggered": [
+    "cardiac_emergency [triggered: sweating]",
+    "bleeding_emergency [triggered: cough, bleeding]",
+    "trauma_emergency [triggered: bleeding]",
+    "obstetric_emergency [triggered: bleeding]",
+    "urgent_fever [triggered: bleeding]"
+  ],
+  "rule_ids_matched": [
+    "RF-TRAUMA_EMERGENCY",
+    "RF-BLEEDING_EMERGENCY",
+    "RF-OBSTETRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "P-CARD-01",
+    "RF-CARDIAC_EMERGENCY",
+    "CR-05"
+  ],
+  "rag_rules_retrieved": [
+    "RF-CARDIAC_EMERGENCY",
+    "RF-BLEEDING_EMERGENCY",
+    "RF-TRAUMA_EMERGENCY",
+    "RF-OBSTETRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "P-CARD-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

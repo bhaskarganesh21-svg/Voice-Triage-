@@ -1,0 +1,2081 @@
+19:11:50  [INFO    ]  VoiceTriage  —    Demo case: CASE_HI_001 | Language: Hindi | Expected: EMERGENCY - Cardiology
+19:11:50  [INFO    ]  VoiceTriage  —  
+######################################################################
+19:11:50  [INFO    ]  VoiceTriage  —  #  VOICETRIAGE PIPELINE  |  Case: CASE_HI_001  |  2026-10-18T19:11:50
+19:11:50  [INFO    ]  VoiceTriage  —  ######################################################################
+19:11:50  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:50  [INFO    ]  VoiceTriage  —    STAGE 1 — SPEECH PROCESSING
+19:11:50  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:50  [INFO    ]  VoiceTriage  —    [DEMO MODE] Using pre-supplied transcript — skipping audio pipeline.
+19:11:50  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:50  [INFO    ]  VoiceTriage  —    STAGE 2 — NLP & SYMPTOM EXTRACTION
+19:11:50  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:50  [INFO    ]  VoiceTriage  —    Input transcript (174 chars): I have been having severe chest pain for the past two hours. The pain is going to my left arm and I am also sweating. I ...
+19:11:55  [WARNING ]  VoiceTriage  —    Ollama call failed: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+19:11:55  [WARNING ]  VoiceTriage  —    Ollama unavailable — using keyword-based fallback extraction
+19:11:55  [INFO    ]  VoiceTriage  —    Keyword fallback found: ['chest pain', 'breathlessness', 'sweating']
+19:11:55  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:55  [INFO    ]  VoiceTriage  —    STAGE 3 — MEDICAL KNOWLEDGE LAYER (RAG)
+19:11:55  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:55  [INFO    ]  VoiceTriage  —    Retrieved 3 rules | Top specialties: ['Cardiology', 'Pulmonology', 'Endocrinology']
+19:11:55  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:55  [INFO    ]  VoiceTriage  —    STAGE 4 — DECISION ENGINE
+19:11:55  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:55  [INFO    ]  VoiceTriage  —    Decision: EMERGENCY → Cardiology | Confidence: 91.0%
+19:11:55  [INFO    ]  VoiceTriage  —    Red flags: ['cardiac_emergency (triggered by: chest pain, breathlessness)']
+19:11:55  [INFO    ]  VoiceTriage  —    Composite rules: ['Cardiac Cluster']
+19:11:55  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:55  [INFO    ]  VoiceTriage  —    STAGE 5 — OUTPUT & DASHBOARD
+19:11:55  [INFO    ]  VoiceTriage  —  ======================================================================
+19:11:55  [INFO    ]  VoiceTriage  —    Output saved: C:\Users\91936\.gemini\antigravity\scratch\voicetriage\output\CASE_HI_001_2026-10-18T19-11-50.json
+14:01:27  [INFO    ]  VoiceTriage --   Demo: CASE_HI_001 | Hindi | Expected: EMERGENCY - Cardiology
+14:01:27  [INFO    ]  VoiceTriage -- 
+####################################################################
+14:01:27  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: CASE_HI_001 | 2026-11-09T14:01:27
+14:01:27  [INFO    ]  VoiceTriage -- ####################################################################
+14:01:27  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:27  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+14:01:27  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:27  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+14:01:27  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:27  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+14:01:27  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:27  [INFO    ]  VoiceTriage --   Input (174 chars): I have been having severe chest pain for the past two hours. The pain is going to my left arm and I 
+14:01:32  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+14:01:32  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+14:01:32  [INFO    ]  VoiceTriage --   Keyword extracted: ['chest pain', 'left arm pain', 'breathlessness', 'sweating']
+14:01:32  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:32  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+14:01:32  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:32  [INFO    ]  VoiceTriage --   Retrieved 3 rules | Specialties: ['Cardiology', 'Pulmonology', 'Endocrinology']
+14:01:32  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:32  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+14:01:32  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:32  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+14:01:32  [INFO    ]  VoiceTriage -- ====================================================================
+14:01:32  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+14:01:32  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:18  [INFO    ]  VoiceTriage -- 
+####################################################################
+14:04:18  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_8DEEC450 | 2026-11-09T14:04:18
+14:04:18  [INFO    ]  VoiceTriage -- ####################################################################
+14:04:18  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:18  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+14:04:18  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:18  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+14:04:18  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:18  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+14:04:18  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:18  [INFO    ]  VoiceTriage --   Input (63 chars): Mere sar mein bahut tez dard ho raha hai aur behosh ho gaya tha
+14:04:22  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+14:04:22  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+14:04:22  [INFO    ]  VoiceTriage --   Keyword extracted: ['unconscious']
+14:04:22  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:22  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+14:04:22  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:22  [INFO    ]  VoiceTriage --   Retrieved 3 rules | Specialties: ['Emergency', 'Pediatrics', 'Endocrinology']
+14:04:22  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:22  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+14:04:22  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:22  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Emergency | Confidence: 98.0%
+14:04:22  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:22  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+14:04:22  [INFO    ]  VoiceTriage -- ====================================================================
+14:04:22  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_8DEEC450_2026-11-09T14-04-18.json
+14:10:05  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+14:10:05  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+14:12:14  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+14:12:14  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+14:20:13  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:20:13  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+14:20:15  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:20:15] "GET /api/health HTTP/1.1" 200 -
+14:23:02  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:23:02  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+14:23:38  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:38] "GET / HTTP/1.1" 200 -
+14:23:38  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:38] "GET /static/css/style.css HTTP/1.1" 200 -
+14:23:38  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:38] "GET /static/js/app.js HTTP/1.1" 200 -
+14:23:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:42] "GET /api/health HTTP/1.1" 200 -
+14:23:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:42] "GET /api/cases HTTP/1.1" 200 -
+14:23:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14:23:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:23:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14:24:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:24:28] "GET / HTTP/1.1" 200 -
+14:25:02  [INFO    ]  VoiceTriage --   Demo: CASE_HI_001 | Hindi | Expected: EMERGENCY - Cardiology
+14:25:02  [INFO    ]  VoiceTriage -- 
+####################################################################
+14:25:02  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: CASE_HI_001 | 2026-11-09T14:25:02
+14:25:02  [INFO    ]  VoiceTriage -- ####################################################################
+14:25:02  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:02  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+14:25:02  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:02  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+14:25:02  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:02  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+14:25:02  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:02  [INFO    ]  VoiceTriage --   Input (174 chars): I have been having severe chest pain for the past two hours. The pain is going to my left arm and I 
+14:25:07  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+14:25:07  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+14:25:07  [INFO    ]  VoiceTriage --   Keyword extracted: ['chest pain', 'left arm pain', 'breathlessness', 'sweating']
+14:25:07  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:07  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+14:25:07  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:07  [INFO    ]  VoiceTriage --   Retrieved 3 rules | Specialties: ['Cardiology', 'Pulmonology', 'Endocrinology']
+14:25:07  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:07  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+14:25:07  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:07  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+14:25:07  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:07  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+14:25:07  [INFO    ]  VoiceTriage -- ====================================================================
+14:25:07  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\CASE_HI_001_2026-11-09T14-25-02.json
+14:25:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:07] "GET /api/demo/CASE_HI_001 HTTP/1.1" 200 -
+14:25:29  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:29] "GET /api/history?limit=40 HTTP/1.1" 200 -
+14:25:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:51] "GET / HTTP/1.1" 200 -
+14:25:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:51] "GET /static/css/style.css HTTP/1.1" 200 -
+14:25:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:51] "GET /static/js/app.js HTTP/1.1" 200 -
+14:25:54  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:54] "GET /api/health HTTP/1.1" 200 -
+14:25:54  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:54] "GET /api/cases HTTP/1.1" 200 -
+14:25:54  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 14:25:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+23:05:46  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+23:05:46  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+23:07:34  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:07:34] "GET / HTTP/1.1" 200 -
+23:09:41  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:09:41] "GET / HTTP/1.1" 200 -
+23:09:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:09:42] "GET /static/css/style.css HTTP/1.1" 200 -
+23:09:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:09:42] "GET /static/js/app.js HTTP/1.1" 200 -
+23:09:43  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:09:43] "GET /api/health HTTP/1.1" 200 -
+23:09:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:09:44] "GET /api/cases HTTP/1.1" 200 -
+23:10:06  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:06] "GET /api/stats HTTP/1.1" 200 -
+23:10:09  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:09] "GET /api/history?limit=40 HTTP/1.1" 200 -
+23:10:14  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:14] "GET / HTTP/1.1" 200 -
+23:10:15  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:15] "GET /static/css/style.css HTTP/1.1" 200 -
+23:10:15  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:15] "GET /static/js/app.js HTTP/1.1" 200 -
+23:10:15  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:15] "GET /api/health HTTP/1.1" 200 -
+23:10:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+23:10:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [09/Nov/2026 23:10:16] "GET /api/cases HTTP/1.1" 200 -
+17:43:22  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:43:22  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+17:43:24  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:43:24] "GET / HTTP/1.1" 200 -
+17:43:25  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:43:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+17:43:25  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:43:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+17:43:25  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:43:25] "GET /api/health HTTP/1.1" 200 -
+17:43:25  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:43:25] "GET /api/cases HTTP/1.1" 200 -
+17:43:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:43:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+17:44:01  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:44:01  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_2892D53C | 2026-11-12T17:44:01
+17:44:01  [INFO    ]  VoiceTriage -- ####################################################################
+17:44:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:01  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:44:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:01  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:44:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:01  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:44:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:01  [INFO    ]  VoiceTriage --   Input (106 chars): Mild runny nose, sneezing, and slight sore throat for two days without high fever or difficulty brea
+17:44:06  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:44:06  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:44:06  [INFO    ]  VoiceTriage --   Keyword extracted: ['breathlessness', 'fever', 'high fever', 'cold', 'sore throat']
+17:44:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:06  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:44:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:06  [INFO    ]  VoiceTriage --   Retrieved 9 rules | Specialties: ['Cardiology', 'Pediatrics', 'GeneralMedicine']
+17:44:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:06  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:44:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:06  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+17:44:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:06  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:44:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:44:06  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_2892D53C_2026-11-12T17-44-01.json
+17:44:06  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:44:06] "POST /api/triage/text HTTP/1.1" 200 -
+17:45:11  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:45:11  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_970781BE | 2026-11-12T17:45:11
+17:45:11  [INFO    ]  VoiceTriage -- ####################################################################
+17:45:11  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:11  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:45:11  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:11  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:45:11  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:11  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:45:11  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:11  [INFO    ]  VoiceTriage --   Input (41 chars): Cold,Mild nose run , sneezing , and fever
+17:45:15  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:45:15  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:45:15  [INFO    ]  VoiceTriage --   Keyword extracted: ['fever', 'cold']
+17:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:15  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:15  [INFO    ]  VoiceTriage --   Retrieved 6 rules | Specialties: ['Pediatrics', 'GeneralMedicine', 'Cardiology']
+17:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:15  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:15  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Pediatrics | Confidence: 99.0%
+17:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:15  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:15  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_970781BE_2026-11-12T17-45-11.json
+17:45:15  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:45:15] "POST /api/triage/text HTTP/1.1" 200 -
+17:45:35  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:45:35  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_05F3074D | 2026-11-12T17:45:35
+17:45:35  [INFO    ]  VoiceTriage -- ####################################################################
+17:45:35  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:35  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:45:35  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:35  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:45:35  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:35  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:45:35  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:35  [INFO    ]  VoiceTriage --   Input (54 chars): Cold,Mild nose run , sneezing , and fever from 2 hours
+17:45:39  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:45:39  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:45:39  [INFO    ]  VoiceTriage --   Keyword extracted: ['fever', 'cold']
+17:45:39  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:39  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:45:39  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:39  [INFO    ]  VoiceTriage --   Retrieved 6 rules | Specialties: ['Pediatrics', 'GeneralMedicine', 'Cardiology']
+17:45:39  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:39  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:45:39  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:39  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Pediatrics | Confidence: 99.0%
+17:45:39  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:39  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:45:39  [INFO    ]  VoiceTriage -- ====================================================================
+17:45:39  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_05F3074D_2026-11-12T17-45-35.json
+17:45:39  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:45:39] "POST /api/triage/text HTTP/1.1" 200 -
+17:47:06  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:47:06  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_33A8270C | 2026-11-12T17:47:06
+17:47:06  [INFO    ]  VoiceTriage -- ####################################################################
+17:47:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:06  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:47:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:06  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:47:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:06  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:47:06  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:06  [INFO    ]  VoiceTriage --   Input (54 chars): Cold,Mild nose run , sneezing , and fever from 2 hours
+17:47:10  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:47:10  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:47:10  [INFO    ]  VoiceTriage --   Keyword extracted: ['fever', 'cold']
+17:47:10  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:10  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:47:10  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:10  [INFO    ]  VoiceTriage --   Retrieved 6 rules | Specialties: ['Pediatrics', 'GeneralMedicine', 'Cardiology']
+17:47:10  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:10  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:47:10  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:10  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Pediatrics | Confidence: 99.0%
+17:47:10  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:10  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:47:10  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:10  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_33A8270C_2026-11-12T17-47-06.json
+17:47:10  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:47:10] "POST /api/triage/text HTTP/1.1" 200 -
+17:47:23  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:47:23  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_D3B4EC5E | 2026-11-12T17:47:23
+17:47:23  [INFO    ]  VoiceTriage -- ####################################################################
+17:47:23  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:23  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:47:23  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:23  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:47:23  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:23  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:47:23  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:23  [INFO    ]  VoiceTriage --   Input (106 chars): Mild runny nose, sneezing, and slight sore throat for two days without high fever or difficulty brea
+17:47:27  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:47:27  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:47:27  [INFO    ]  VoiceTriage --   Keyword extracted: ['breathlessness', 'fever', 'high fever', 'cold', 'sore throat']
+17:47:27  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:27  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:47:27  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:27  [INFO    ]  VoiceTriage --   Retrieved 9 rules | Specialties: ['Cardiology', 'Pediatrics', 'GeneralMedicine']
+17:47:27  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:27  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:47:27  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:27  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+17:47:27  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:27  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:47:27  [INFO    ]  VoiceTriage -- ====================================================================
+17:47:28  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_D3B4EC5E_2026-11-12T17-47-23.json
+17:47:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:47:28] "POST /api/triage/text HTTP/1.1" 200 -
+17:53:01  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:53:01  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_D29D03B8 | 2026-11-12T17:53:01
+17:53:01  [INFO    ]  VoiceTriage -- ####################################################################
+17:53:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:01  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:53:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:01  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:53:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:01  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:53:01  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:01  [INFO    ]  VoiceTriage --   Input (106 chars): Mild runny nose, sneezing, and slight sore throat for two days without high fever or difficulty brea
+17:53:05  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:53:05  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:53:05  [INFO    ]  VoiceTriage --   Keyword extracted: ['breathlessness', 'fever', 'high fever', 'cold', 'sore throat']
+17:53:05  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:05  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:53:05  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:05  [INFO    ]  VoiceTriage --   Retrieved 9 rules | Specialties: ['Cardiology', 'Pediatrics', 'GeneralMedicine']
+17:53:05  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:05  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:53:05  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:05  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+17:53:05  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:05  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:53:05  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:05  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_D29D03B8_2026-11-12T17-53-01.json
+17:53:05  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:53:05] "POST /api/triage/text HTTP/1.1" 200 -
+17:53:55  [INFO    ]  VoiceTriage -- 
+####################################################################
+17:53:55  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_6F1B5CA4 | 2026-11-12T17:53:55
+17:53:55  [INFO    ]  VoiceTriage -- ####################################################################
+17:53:55  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:55  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+17:53:55  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:55  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+17:53:55  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:55  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+17:53:55  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:55  [INFO    ]  VoiceTriage --   Input (103 chars): Mild runny nose, sneezing, and slight sore throat for two days without high fever or difficulty brea
+17:53:59  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+17:53:59  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+17:53:59  [INFO    ]  VoiceTriage --   Keyword extracted: ['breathlessness', 'fever', 'high fever', 'cold', 'sore throat']
+17:53:59  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:59  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+17:53:59  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:59  [INFO    ]  VoiceTriage --   Retrieved 9 rules | Specialties: ['Cardiology', 'Pediatrics', 'GeneralMedicine']
+17:53:59  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:59  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+17:53:59  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:59  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+17:53:59  [INFO    ]  VoiceTriage -- ====================================================================
+17:53:59  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+17:53:59  [INFO    ]  VoiceTriage -- ====================================================================
+17:54:00  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_6F1B5CA4_2026-11-12T17-53-55.json
+17:54:00  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 17:54:00] "POST /api/triage/text HTTP/1.1" 200 -
+19:49:43  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+19:49:43  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+19:49:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:49:45] "GET / HTTP/1.1" 200 -
+19:49:46  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:49:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+19:49:46  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:49:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+19:49:46  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:49:46] "GET /api/health HTTP/1.1" 200 -
+19:49:47  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:49:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+19:49:47  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:49:47] "GET /api/cases HTTP/1.1" 200 -
+19:50:00  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:00] "GET / HTTP/1.1" 200 -
+19:50:00  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+19:50:00  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+19:50:01  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:01] "GET /api/health HTTP/1.1" 200 -
+19:50:01  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:01] "GET /api/cases HTTP/1.1" 200 -
+19:50:49  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:49] "GET / HTTP/1.1" 200 -
+19:50:49  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+19:50:49  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+19:50:50  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:50] "GET /api/health HTTP/1.1" 200 -
+19:50:50  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:50:50] "GET /api/cases HTTP/1.1" 200 -
+19:54:52  [INFO    ]  VoiceTriage -- 
+####################################################################
+19:54:52  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_E75B3F74 | 2026-11-12T19:54:52
+19:54:52  [INFO    ]  VoiceTriage -- ####################################################################
+19:54:52  [INFO    ]  VoiceTriage -- ====================================================================
+19:54:52  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+19:54:52  [INFO    ]  VoiceTriage -- ====================================================================
+19:56:37  [INFO    ]  Stage1-STT -- 
+=======================================================
+19:56:37  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+19:56:37  [INFO    ]  Stage1-STT --   📁  File: VOICE_E75B3F74.wav
+19:56:37  [INFO    ]  Stage1-STT -- =======================================================
+19:56:37  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+19:56:37  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_E75B3F74.wav | 16000 Hz | 11.78s | (188416,)
+19:56:37  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.962)
+19:56:37  [INFO    ]  Stage1-STT -- Audio loaded: 11.78s @ 16000Hz
+19:56:37  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+19:56:37  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+19:56:38  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0713 → 0.0543
+19:56:38  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+19:56:38  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+19:56:38  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+19:56:38  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+19:56:38  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+19:56:40  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+19:56:41  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+19:56:41  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/tree/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66?recursive=true&expand=false "HTTP/1.1 200 OK"
+19:56:41  [INFO    ]  httpx2 -- HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json "HTTP/1.1 307 Temporary Redirect"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+19:56:42  [WARNING ]  huggingface_hub.utils._http -- Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json?%2FSystran%2Ffaster-whisper-base%2Fresolve%2Febe41f70d5b6dfa9166e2c581c45c9c0cfc57b66%2Fconfig.json=&etag=%22867cf1a0fece1394e01d55e287ba2f09a577c046%22 "HTTP/1.1 200 OK"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json?%2FSystran%2Ffaster-whisper-base%2Fresolve%2Febe41f70d5b6dfa9166e2c581c45c9c0cfc57b66%2Ftokenizer.json=&etag=%227818adb6de9fa3064d3ff81226fdd675be1f6344%22 "HTTP/1.1 200 OK"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json?%2FSystran%2Ffaster-whisper-base%2Fresolve%2Febe41f70d5b6dfa9166e2c581c45c9c0cfc57b66%2Fconfig.json=&etag=%22867cf1a0fece1394e01d55e287ba2f09a577c046%22 "HTTP/1.1 200 OK"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json?%2FSystran%2Ffaster-whisper-base%2Fresolve%2Febe41f70d5b6dfa9166e2c581c45c9c0cfc57b66%2Ftokenizer.json=&etag=%227818adb6de9fa3064d3ff81226fdd675be1f6344%22 "HTTP/1.1 200 OK"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt?%2FSystran%2Ffaster-whisper-base%2Fresolve%2Febe41f70d5b6dfa9166e2c581c45c9c0cfc57b66%2Fvocabulary.txt=&etag=%22c9074644d9d1205686f16d411564729461324b75%22 "HTTP/1.1 200 OK"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/xet-read-token/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66 "HTTP/1.1 200 OK"
+19:56:42  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-base/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt?%2FSystran%2Ffaster-whisper-base%2Fresolve%2Febe41f70d5b6dfa9166e2c581c45c9c0cfc57b66%2Fvocabulary.txt=&etag=%22c9074644d9d1205686f16d411564729461324b75%22 "HTTP/1.1 200 OK"
+19:57:50  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+19:57:50  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+19:57:50  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+19:57:50  [INFO    ]  VoiceTriage -- ====================================================================
+19:57:50  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_E75B3F74_2026-11-12T19-54-52.json
+19:57:50  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:57:50] "POST /api/triage/voice HTTP/1.1" 200 -
+19:58:40  [INFO    ]  VoiceTriage -- 
+####################################################################
+19:58:40  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_85A0A4CF | 2026-11-12T19:58:40
+19:58:40  [INFO    ]  VoiceTriage -- ####################################################################
+19:58:40  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:40  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+19:58:40  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:40  [INFO    ]  Stage1-STT -- 
+=======================================================
+19:58:40  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+19:58:40  [INFO    ]  Stage1-STT --   📁  File: VOICE_85A0A4CF.wav
+19:58:40  [INFO    ]  Stage1-STT -- =======================================================
+19:58:40  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+19:58:41  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_85A0A4CF.wav | 16000 Hz | 11.78s | (188416,)
+19:58:41  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.962)
+19:58:41  [INFO    ]  Stage1-STT -- Audio loaded: 11.78s @ 16000Hz
+19:58:41  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+19:58:41  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+19:58:43  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0713 → 0.0543
+19:58:43  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+19:58:43  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+19:58:44  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+19:58:44  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+19:58:44  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+19:58:48  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+19:58:56  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+19:58:56  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+19:58:56  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+19:58:56  [INFO    ]  VoiceTriage -- ====================================================================
+19:58:56  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_85A0A4CF_2026-11-12T19-58-40.json
+19:58:56  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 19:58:56] "POST /api/triage/voice HTTP/1.1" 200 -
+20:00:37  [INFO    ]  VoiceTriage -- 
+####################################################################
+20:00:37  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_27CED1BF | 2026-11-12T20:00:37
+20:00:37  [INFO    ]  VoiceTriage -- ####################################################################
+20:00:37  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:37  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+20:00:37  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:37  [INFO    ]  Stage1-STT -- 
+=======================================================
+20:00:37  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+20:00:37  [INFO    ]  Stage1-STT --   📁  File: VOICE_27CED1BF.wav
+20:00:37  [INFO    ]  Stage1-STT -- =======================================================
+20:00:37  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+20:00:37  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_27CED1BF.wav | 16000 Hz | 48.90s | (782336,)
+20:00:37  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.491)
+20:00:37  [INFO    ]  Stage1-STT -- Audio loaded: 48.90s @ 16000Hz
+20:00:38  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+20:00:38  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+20:00:46  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0914 → 0.0806
+20:00:46  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+20:00:46  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+20:00:46  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+20:00:46  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+20:00:46  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+20:00:47  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+20:00:58  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+20:00:58  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+20:00:58  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:58  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+20:00:58  [INFO    ]  VoiceTriage -- ====================================================================
+20:00:59  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_27CED1BF_2026-11-12T20-00-37.json
+20:00:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:00:59] "POST /api/triage/voice HTTP/1.1" 200 -
+20:02:07  [INFO    ]  VoiceTriage -- 
+####################################################################
+20:02:07  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_7FC0B36D | 2026-11-12T20:02:07
+20:02:07  [INFO    ]  VoiceTriage -- ####################################################################
+20:02:07  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:07  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+20:02:07  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:07  [INFO    ]  Stage1-STT -- 
+=======================================================
+20:02:07  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+20:02:07  [INFO    ]  Stage1-STT --   📁  File: VOICE_7FC0B36D.wav
+20:02:07  [INFO    ]  Stage1-STT -- =======================================================
+20:02:07  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+20:02:08  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_7FC0B36D.wav | 16000 Hz | 48.90s | (782336,)
+20:02:08  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.491)
+20:02:08  [INFO    ]  Stage1-STT -- Audio loaded: 48.90s @ 16000Hz
+20:02:08  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+20:02:08  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+20:02:21  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0914 → 0.0806
+20:02:21  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+20:02:21  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+20:02:21  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+20:02:21  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+20:02:21  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+20:02:23  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+20:02:25  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+20:02:25  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+20:02:25  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+20:02:25  [INFO    ]  VoiceTriage -- ====================================================================
+20:02:25  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_7FC0B36D_2026-11-12T20-02-07.json
+20:02:25  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:02:25] "POST /api/triage/voice HTTP/1.1" 200 -
+20:03:20  [INFO    ]  VoiceTriage -- 
+####################################################################
+20:03:20  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_C453C374 | 2026-11-12T20:03:20
+20:03:20  [INFO    ]  VoiceTriage -- ####################################################################
+20:03:20  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:20  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+20:03:20  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:20  [INFO    ]  Stage1-STT -- 
+=======================================================
+20:03:20  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+20:03:20  [INFO    ]  Stage1-STT --   📁  File: VOICE_C453C374.wav
+20:03:20  [INFO    ]  Stage1-STT -- =======================================================
+20:03:20  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+20:03:21  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_C453C374.wav | 16000 Hz | 48.90s | (782336,)
+20:03:21  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.491)
+20:03:21  [INFO    ]  Stage1-STT -- Audio loaded: 48.90s @ 16000Hz
+20:03:21  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+20:03:21  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+20:03:23  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0914 → 0.0806
+20:03:23  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+20:03:23  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+20:03:23  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+20:03:23  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+20:03:23  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+20:03:24  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+20:03:26  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+20:03:26  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+20:03:26  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+20:03:26  [INFO    ]  VoiceTriage -- ====================================================================
+20:03:26  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_C453C374_2026-11-12T20-03-20.json
+20:03:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:03:26] "POST /api/triage/voice HTTP/1.1" 200 -
+20:09:34  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:34] "GET / HTTP/1.1" 200 -
+20:09:34  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+20:09:36  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:36] "GET /static/js/app.js HTTP/1.1" 200 -
+20:09:36  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:36] "GET /static/css/style.css HTTP/1.1" 200 -
+20:09:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:42] "GET /api/health HTTP/1.1" 200 -
+20:09:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+20:09:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:09:42] "GET /api/cases HTTP/1.1" 200 -
+20:14:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:26] "GET / HTTP/1.1" 200 -
+20:14:27  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+20:14:27  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+20:14:27  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+20:14:27  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:27] "GET /api/health HTTP/1.1" 200 -
+20:14:27  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+20:14:27  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:14:27] "GET /api/cases HTTP/1.1" 200 -
+20:15:20  [INFO    ]  VoiceTriage -- 
+####################################################################
+20:15:20  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_232B736C | 2026-11-12T20:15:20
+20:15:20  [INFO    ]  VoiceTriage -- ####################################################################
+20:15:20  [INFO    ]  VoiceTriage -- ====================================================================
+20:15:20  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+20:15:20  [INFO    ]  VoiceTriage -- ====================================================================
+20:15:20  [INFO    ]  Stage1-STT -- 
+=======================================================
+20:15:20  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+20:15:20  [INFO    ]  Stage1-STT --   📁  File: VOICE_232B736C.wav
+20:15:20  [INFO    ]  Stage1-STT -- =======================================================
+20:15:20  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+20:15:21  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_232B736C.wav | 16000 Hz | 48.90s | (782336,)
+20:15:22  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.491)
+20:15:23  [INFO    ]  Stage1-STT -- Audio loaded: 48.90s @ 16000Hz
+20:15:23  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+20:15:23  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+20:15:33  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0914 → 0.0806
+20:15:33  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+20:15:33  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+20:15:33  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+20:15:33  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+20:15:33  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+20:16:47  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+20:16:49  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+20:16:49  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+20:16:49  [INFO    ]  VoiceTriage -- ====================================================================
+20:16:49  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_232B736C_2026-11-12T20-15-20.json
+20:16:50  [INFO    ]  werkzeug -- 127.0.0.1 - - [12/Nov/2026 20:16:50] "POST /api/triage/voice HTTP/1.1" 200 -
+00:46:56  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:46:56] "GET / HTTP/1.1" 200 -
+00:46:56  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:46:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+00:46:56  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:46:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+00:46:58  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:46:58] "GET /api/health HTTP/1.1" 200 -
+00:46:58  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:46:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+00:46:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:46:59] "GET /api/cases HTTP/1.1" 200 -
+00:58:34  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.96.230.165:5000
+00:58:35  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+00:58:36  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 00:58:36] "GET /api/health HTTP/1.1" 200 -
+00:58:36  [INFO    ]  werkzeug -- 10.96.230.165 - - [13/Nov/2026 00:58:36] "GET /api/health HTTP/1.1" 200 -
+01:14:20  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.96.230.165:5000
+01:14:20  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+01:17:34  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 01:17:34] "GET / HTTP/1.1" 200 -
+01:17:34  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 01:17:34] "GET /static/css/style.css HTTP/1.1" 200 -
+01:17:34  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 01:17:34] "GET /static/js/app.js HTTP/1.1" 200 -
+01:17:34  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 01:17:34] "GET /api/health HTTP/1.1" 200 -
+01:17:34  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 01:17:34] "GET /api/cases HTTP/1.1" 200 -
+10:27:13  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.96.230.165:5000
+10:27:13  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+10:27:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:27:16] "GET / HTTP/1.1" 200 -
+10:27:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:27:16] "GET /static/css/style.css HTTP/1.1" 200 -
+10:27:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:27:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+10:27:17  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:27:17] "GET /api/health HTTP/1.1" 200 -
+10:27:17  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:27:17] "GET /api/cases HTTP/1.1" 200 -
+10:27:18  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:27:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10:37:40  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:37:40  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_38D697CA | 2026-11-13T10:37:40
+10:37:40  [INFO    ]  VoiceTriage -- ####################################################################
+10:37:40  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:40  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:37:40  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:40  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:37:40  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:40  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:37:40  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:40  [INFO    ]  VoiceTriage --   Input (116 chars): I have had a chronic cough for over three weeks with blood-tinged sputum, night sweats, and unexplai
+10:37:44  [WARNING ]  VoiceTriage --   Ollama: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+10:37:44  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:37:44  [INFO    ]  VoiceTriage --   Keyword extracted: ['sweating', 'cough', 'bleeding', 'weight loss', 'night sweats']
+10:37:44  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:44  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:37:44  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:44  [INFO    ]  VoiceTriage --   Retrieved 8 rules | Specialties: ['Cardiology', 'Emergency', 'Gynecology']
+10:37:44  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:44  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:37:44  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:44  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+10:37:44  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:44  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:37:44  [INFO    ]  VoiceTriage -- ====================================================================
+10:37:44  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_38D697CA_2026-11-13T10-37-40.json
+10:44:01  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.96.230.165:5000
+10:44:02  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+10:45:54  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:45:54  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_C3DB312F | 2026-11-13T10:45:54
+10:45:54  [INFO    ]  VoiceTriage -- ####################################################################
+10:45:54  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:54  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:45:54  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:54  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:45:54  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:54  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:45:54  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:54  [INFO    ]  VoiceTriage --   Input (40 chars): chronic cough for three weeks with blood
+10:45:55  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:45:55  [INFO    ]  VoiceTriage --   Keyword extracted: ['cough', 'bleeding']
+10:45:55  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:55  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:45:55  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:55  [INFO    ]  VoiceTriage --   Retrieved 6 rules | Specialties: ['Emergency', 'Gynecology', 'GeneralMedicine']
+10:45:55  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:55  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:45:55  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:55  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Emergency | Confidence: 99.0%
+10:45:55  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:55  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:45:55  [INFO    ]  VoiceTriage -- ====================================================================
+10:45:55  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_C3DB312F_2026-11-13T10-45-54.json
+10:45:55  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:45:55] "POST /api/triage/text HTTP/1.1" 200 -
+10:47:42  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.96.230.165:5000
+10:47:42  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+10:47:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:44] "GET / HTTP/1.1" 200 -
+10:47:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+10:47:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:44] "GET /static/js/app.js HTTP/1.1" 200 -
+10:47:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:45] "GET /api/health HTTP/1.1" 200 -
+10:47:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:45] "GET /api/cases HTTP/1.1" 200 -
+10:47:51  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:47:51  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_08EB28B6 | 2026-11-13T10:47:51
+10:47:51  [INFO    ]  VoiceTriage -- ####################################################################
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   Input (148 chars): My husband's face has suddenly drooped on one side. He cannot lift his right arm and his speech is c
+10:47:51  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:47:51  [INFO    ]  VoiceTriage --   Keyword extracted: ['facial drooping', 'arm weakness', 'speech difficulty']
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   Retrieved 2 rules | Specialties: ['Neurology', 'GeneralMedicine']
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Neurology | Confidence: 99.0%
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:47:51  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:51  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_08EB28B6_2026-11-13T10-47-51.json
+10:47:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:51] "POST /api/triage/voice HTTP/1.1" 200 -
+10:47:59  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:47:59  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_6C9CEE53 | 2026-11-13T10:47:59
+10:47:59  [INFO    ]  VoiceTriage -- ####################################################################
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   Input (123 chars): मुझे दो दिन से हल्की सर्दी और खाँसी है। हल्का बुखार निन्यानवे डिग्री है और गले में थोड़ी खराश है। को
+10:47:59  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:47:59  [INFO    ]  VoiceTriage --   Keyword extracted: []
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:47:59  [INFO    ]  VoiceTriage -- ====================================================================
+10:47:59  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_6C9CEE53_2026-11-13T10-47-59.json
+10:47:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:47:59] "POST /api/triage/voice HTTP/1.1" 200 -
+10:48:07  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:48:07  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_2EEE1BDD | 2026-11-13T10:48:07
+10:48:07  [INFO    ]  VoiceTriage -- ####################################################################
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   Input (93 chars): I have severe feelings of hopelessness and took multiple sleeping pills with suicidal intent.
+10:48:07  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:48:07  [INFO    ]  VoiceTriage --   Keyword extracted: ['vomiting', 'suicidal']
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   Retrieved 5 rules | Specialties: ['Emergency', 'Psychiatry', 'Endocrinology']
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Emergency | Confidence: 99.0%
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:48:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:07  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_2EEE1BDD_2026-11-13T10-48-07.json
+10:48:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:48:07] "POST /api/triage/text HTTP/1.1" 200 -
+10:48:13  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:48:13  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_D6AD29B5 | 2026-11-13T10:48:13
+10:48:13  [INFO    ]  VoiceTriage -- ####################################################################
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   Input (116 chars): I have had a chronic cough for over three weeks with blood-tinged sputum, night sweats, and unexplai
+10:48:13  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:48:13  [INFO    ]  VoiceTriage --   Keyword extracted: ['sweating', 'cough', 'bleeding', 'weight loss', 'night sweats']
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   Retrieved 8 rules | Specialties: ['Cardiology', 'Emergency', 'Gynecology']
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:48:13  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:13  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_D6AD29B5_2026-11-13T10-48-13.json
+10:48:13  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:48:13] "POST /api/triage/text HTTP/1.1" 200 -
+10:48:19  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:48:19  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_3152AD89 | 2026-11-13T10:48:19
+10:48:19  [INFO    ]  VoiceTriage -- ####################################################################
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   Input (106 chars): Mild runny nose, sneezing, and slight sore throat for two days without high fever or difficulty brea
+10:48:19  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:48:19  [INFO    ]  VoiceTriage --   Keyword extracted: ['breathlessness', 'fever', 'high fever', 'cold', 'sore throat']
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   Retrieved 9 rules | Specialties: ['Cardiology', 'Pediatrics', 'GeneralMedicine']
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:48:19  [INFO    ]  VoiceTriage -- ====================================================================
+10:48:19  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_3152AD89_2026-11-13T10-48-19.json
+10:48:19  [INFO    ]  werkzeug -- 127.0.0.1 - - [13/Nov/2026 10:48:19] "POST /api/triage/text HTTP/1.1" 200 -
+11:49:13  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 11:49:13] "GET / HTTP/1.1" 200 -
+11:49:15  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 11:49:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+11:49:15  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 11:49:15] "GET /static/js/app.js HTTP/1.1" 200 -
+11:49:15  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 11:49:15] "GET /api/health HTTP/1.1" 200 -
+11:49:15  [INFO    ]  werkzeug -- 10.96.230.221 - - [13/Nov/2026 11:49:15] "GET /api/cases HTTP/1.1" 200 -
+22:43:39  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.44:5000
+22:43:39  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+22:43:41  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:43:41] "GET / HTTP/1.1" 200 -
+22:43:41  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:43:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+22:43:41  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:43:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+22:43:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:43:42] "GET /api/health HTTP/1.1" 200 -
+22:43:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:43:42] "GET /api/cases HTTP/1.1" 200 -
+22:43:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:43:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+22:54:38  [INFO    ]  VoiceTriage -- 
+####################################################################
+22:54:39  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_B8647C67 | 2026-11-17T22:54:38
+22:54:39  [INFO    ]  VoiceTriage -- ####################################################################
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   Input (148 chars): My husband's face has suddenly drooped on one side. He cannot lift his right arm and his speech is c
+22:54:39  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+22:54:39  [INFO    ]  VoiceTriage --   Keyword extracted: ['facial drooping', 'arm weakness', 'speech difficulty']
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   Retrieved 2 rules | Specialties: ['Neurology', 'GeneralMedicine']
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Neurology | Confidence: 99.0%
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:39  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+22:54:39  [INFO    ]  VoiceTriage -- ====================================================================
+22:54:40  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_B8647C67_2026-11-17T22-54-38.json
+22:54:40  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:54:40] "POST /api/triage/voice HTTP/1.1" 200 -
+22:55:35  [INFO    ]  VoiceTriage -- 
+####################################################################
+22:55:35  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_A462F0C4 | 2026-11-17T22:55:35
+22:55:35  [INFO    ]  VoiceTriage -- ####################################################################
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   Input (123 chars): मुझे दो दिन से हल्की सर्दी और खाँसी है। हल्का बुखार निन्यानवे डिग्री है और गले में थोड़ी खराश है। को
+22:55:35  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+22:55:35  [INFO    ]  VoiceTriage --   Keyword extracted: []
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:35  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+22:55:35  [INFO    ]  VoiceTriage -- ====================================================================
+22:55:36  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_A462F0C4_2026-11-17T22-55-35.json
+22:55:36  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:55:36] "POST /api/triage/voice HTTP/1.1" 200 -
+22:56:41  [INFO    ]  VoiceTriage -- 
+####################################################################
+22:56:41  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_CD670373 | 2026-11-17T22:56:41
+22:56:41  [INFO    ]  VoiceTriage -- ####################################################################
+22:56:41  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   Input (123 chars): मुझे दो दिन से हल्की सर्दी और खाँसी है। हल्का बुखार निन्यानवे डिग्री है और गले में थोड़ी खराश है। को
+22:56:42  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+22:56:42  [INFO    ]  VoiceTriage --   Keyword extracted: []
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:42  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+22:56:42  [INFO    ]  VoiceTriage -- ====================================================================
+22:56:43  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_CD670373_2026-11-17T22-56-41.json
+22:56:43  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 22:56:43] "POST /api/triage/voice HTTP/1.1" 200 -
+23:12:41  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.44:5000
+23:12:41  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+23:12:44  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 23:12:44] "GET / HTTP/1.1" 200 -
+23:12:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 23:12:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+23:12:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 23:12:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+23:12:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 23:12:45] "GET /api/health HTTP/1.1" 200 -
+23:12:45  [INFO    ]  werkzeug -- 127.0.0.1 - - [17/Nov/2026 23:12:45] "GET /api/cases HTTP/1.1" 200 -
+09:45:14  [INFO    ]  VoiceTriage -- 
+####################################################################
+09:45:14  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_D1CD7EC9 | 2026-11-18T09:45:14
+09:45:14  [INFO    ]  VoiceTriage -- ####################################################################
+09:45:14  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:14  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+09:45:14  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:14  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+09:45:14  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:14  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+09:45:14  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:14  [INFO    ]  VoiceTriage --   Input (116 chars): I have had a chronic cough for over three weeks with blood-tinged sputum, night sweats, and unexplai
+09:45:14  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+09:45:15  [INFO    ]  VoiceTriage --   Keyword extracted: ['sweating', 'cough', 'bleeding', 'weight loss', 'night sweats']
+09:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:15  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+09:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:15  [INFO    ]  VoiceTriage --   Retrieved 8 rules | Specialties: ['Cardiology', 'Emergency', 'Gynecology']
+09:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:15  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+09:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:15  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+09:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:15  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+09:45:15  [INFO    ]  VoiceTriage -- ====================================================================
+09:45:16  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_D1CD7EC9_2026-11-18T09-45-14.json
+09:45:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 09:45:16] "POST /api/triage/text HTTP/1.1" 200 -
+10:11:05  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:11:06  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_D9DAB66B | 2026-11-18T10:11:05
+10:11:07  [INFO    ]  VoiceTriage -- ####################################################################
+10:11:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:07  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:11:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:07  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:11:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:07  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:11:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:07  [INFO    ]  VoiceTriage --   Input (79 chars): i am having cough and fever in this couple of 2-3 days also my chest is paining
+10:11:08  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:11:08  [INFO    ]  VoiceTriage --   Keyword extracted: ['fever', 'cough']
+10:11:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:08  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:11:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:08  [INFO    ]  VoiceTriage --   Retrieved 7 rules | Specialties: ['Emergency', 'Pediatrics', 'GeneralMedicine']
+10:11:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:08  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:11:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:08  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Emergency | Confidence: 99.0%
+10:11:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:08  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:11:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:11:09  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_D9DAB66B_2026-11-18T10-11-05.json
+10:11:10  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 10:11:10] "POST /api/triage/text HTTP/1.1" 200 -
+10:15:07  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:15:07  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_71660521 | 2026-11-18T10:15:07
+10:15:07  [INFO    ]  VoiceTriage -- ####################################################################
+10:15:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:07  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:15:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:07  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:15:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:07  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:15:07  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:07  [INFO    ]  VoiceTriage --   Input (116 chars): I have had a chronic cough for over three weeks with blood-tinged sputum, night sweats, and unexplai
+10:15:07  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:15:07  [INFO    ]  VoiceTriage --   Keyword extracted: ['sweating', 'cough', 'bleeding', 'weight loss', 'night sweats']
+10:15:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:08  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:15:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:08  [INFO    ]  VoiceTriage --   Retrieved 8 rules | Specialties: ['Cardiology', 'Emergency', 'Gynecology']
+10:15:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:08  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:15:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:08  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+10:15:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:08  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:15:08  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:08  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_71660521_2026-11-18T10-15-07.json
+10:15:08  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 10:15:08] "POST /api/triage/text HTTP/1.1" 200 -
+10:15:17  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:15:17  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_01E7EF39 | 2026-11-18T10:15:17
+10:15:17  [INFO    ]  VoiceTriage -- ####################################################################
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   Input (93 chars): I have severe feelings of hopelessness and took multiple sleeping pills with suicidal intent.
+10:15:17  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:15:17  [INFO    ]  VoiceTriage --   Keyword extracted: ['vomiting', 'suicidal']
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   Retrieved 5 rules | Specialties: ['Emergency', 'Psychiatry', 'Endocrinology']
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Emergency | Confidence: 99.0%
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:15:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:15:17  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_01E7EF39_2026-11-18T10-15-17.json
+10:15:17  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 10:15:17] "POST /api/triage/text HTTP/1.1" 200 -
+10:18:17  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:18:17  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_1890A9F7 | 2026-11-18T10:18:17
+10:18:17  [INFO    ]  VoiceTriage -- ####################################################################
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   Input (93 chars): I have severe feelings of hopelessness and took multiple sleeping pills with suicidal intent.
+10:18:17  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:18:17  [INFO    ]  VoiceTriage --   Keyword extracted: ['vomiting', 'suicidal']
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   Retrieved 5 rules | Specialties: ['Emergency', 'Psychiatry', 'Endocrinology']
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Emergency | Confidence: 99.0%
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:18:17  [INFO    ]  VoiceTriage -- ====================================================================
+10:18:17  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_1890A9F7_2026-11-18T10-18-17.json
+10:18:17  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 10:18:17] "POST /api/triage/text HTTP/1.1" 200 -
+10:19:03  [INFO    ]  VoiceTriage -- 
+####################################################################
+10:19:03  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_AEEA00E0 | 2026-11-18T10:19:03
+10:19:03  [INFO    ]  VoiceTriage -- ####################################################################
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   Input (52 chars): i am having Fever and nose running in these 2-3 days
+10:19:03  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+10:19:03  [INFO    ]  VoiceTriage --   Keyword extracted: ['fever']
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   Retrieved 6 rules | Specialties: ['Pediatrics', 'GeneralMedicine', 'Neurology']
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Pediatrics | Confidence: 98.0%
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+10:19:03  [INFO    ]  VoiceTriage -- ====================================================================
+10:19:03  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_AEEA00E0_2026-11-18T10-19-03.json
+10:19:03  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 10:19:03] "POST /api/triage/text HTTP/1.1" 200 -
+13:04:27  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+13:04:28  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+13:04:30  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:04:30] "GET / HTTP/1.1" 200 -
+13:04:30  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:04:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+13:04:30  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:04:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+13:04:30  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:04:30] "GET /api/health HTTP/1.1" 200 -
+13:04:31  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:04:31] "GET /api/cases HTTP/1.1" 200 -
+13:04:31  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:04:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+13:05:03  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:05:03  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_977EB73F | 2026-11-18T13:05:03
+13:05:03  [INFO    ]  VoiceTriage -- ####################################################################
+13:05:03  [INFO    ]  VoiceTriage -- ====================================================================
+13:05:03  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:05:03  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:02  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:07:02  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:07:02  [INFO    ]  Stage1-STT --   📁  File: VOICE_977EB73F.wav
+13:07:02  [INFO    ]  Stage1-STT -- =======================================================
+13:07:02  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:07:02  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_977EB73F.wav | 16000 Hz | 6.66s | (106496,)
+13:07:02  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.410)
+13:07:02  [INFO    ]  Stage1-STT -- Audio loaded: 6.66s @ 16000Hz
+13:07:02  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:07:02  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:07:02  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.1001 → 0.0412
+13:07:02  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:07:02  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:07:02  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:07:02  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:07:02  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:07:05  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:07:05  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:07:05  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:07:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:05  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_977EB73F_2026-11-18T13-05-03.json
+13:07:05  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:07:05] "POST /api/triage/voice HTTP/1.1" 200 -
+13:07:46  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:07:46  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_744285CC | 2026-11-18T13:07:46
+13:07:46  [INFO    ]  VoiceTriage -- ####################################################################
+13:07:46  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:46  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:07:46  [INFO    ]  VoiceTriage -- ====================================================================
+13:07:46  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:07:46  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:07:46  [INFO    ]  Stage1-STT --   📁  File: VOICE_744285CC.wav
+13:07:46  [INFO    ]  Stage1-STT -- =======================================================
+13:07:46  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:07:46  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_744285CC.wav | 16000 Hz | 6.66s | (106496,)
+13:07:46  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.410)
+13:07:46  [INFO    ]  Stage1-STT -- Audio loaded: 6.66s @ 16000Hz
+13:07:46  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:07:46  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:07:47  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.1001 → 0.0412
+13:07:47  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:07:47  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:07:47  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:07:47  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:07:47  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:07:49  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+13:08:05  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:08:05  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:08:05  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:08:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:08:05  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_744285CC_2026-11-18T13-07-46.json
+13:08:05  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:08:05] "POST /api/triage/voice HTTP/1.1" 200 -
+13:17:20  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:17:20  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_49075AE4 | 2026-11-18T13:17:19
+13:17:20  [INFO    ]  VoiceTriage -- ####################################################################
+13:17:20  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:20  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:17:20  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:20  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:17:20  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:17:20  [INFO    ]  Stage1-STT --   📁  File: VOICE_49075AE4.wav
+13:17:20  [INFO    ]  Stage1-STT -- =======================================================
+13:17:20  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:17:22  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_49075AE4.wav | 16000 Hz | 23.04s | (368640,)
+13:17:22  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.475)
+13:17:22  [INFO    ]  Stage1-STT -- Audio loaded: 23.04s @ 16000Hz
+13:17:22  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:17:22  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:17:28  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0922 → 0.0772
+13:17:28  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:17:28  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:17:28  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:17:28  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:17:28  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:17:31  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+13:17:33  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:17:33  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:17:33  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:17:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:17:33  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_49075AE4_2026-11-18T13-17-19.json
+13:17:33  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:17:33] "POST /api/triage/voice HTTP/1.1" 200 -
+13:18:16  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:18:16  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_7D05BD03 | 2026-11-18T13:18:16
+13:18:16  [INFO    ]  VoiceTriage -- ####################################################################
+13:18:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:16  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:18:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:16  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:18:16  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:18:16  [INFO    ]  Stage1-STT --   📁  File: VOICE_7D05BD03.wav
+13:18:16  [INFO    ]  Stage1-STT -- =======================================================
+13:18:16  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:18:29  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_7D05BD03.wav | 16000 Hz | 23.04s | (368640,)
+13:18:29  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.475)
+13:18:29  [INFO    ]  Stage1-STT -- Audio loaded: 23.04s @ 16000Hz
+13:18:29  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:18:29  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:18:30  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0922 → 0.0772
+13:18:30  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:18:30  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:18:30  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:18:30  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:18:30  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:18:31  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+13:18:33  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:18:33  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:18:33  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:18:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:18:33  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_7D05BD03_2026-11-18T13-18-16.json
+13:18:33  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:18:33] "POST /api/triage/voice HTTP/1.1" 200 -
+13:19:31  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:19:31  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_4889D639 | 2026-11-18T13:19:31
+13:19:31  [INFO    ]  VoiceTriage -- ####################################################################
+13:19:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:31  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:19:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:31  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:19:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:31  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:19:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:31  [INFO    ]  VoiceTriage --   Input (53 chars): i am having chest pain and non concious since 2 hours
+13:19:32  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:19:32  [INFO    ]  VoiceTriage --   Keyword extracted: ['chest pain']
+13:19:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:32  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:19:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:32  [INFO    ]  VoiceTriage --   Retrieved 2 rules | Specialties: ['Cardiology']
+13:19:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:32  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:19:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:32  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 78.0%
+13:19:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:32  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:19:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:19:32  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_4889D639_2026-11-18T13-19-31.json
+13:19:34  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:19:34] "POST /api/triage/text HTTP/1.1" 200 -
+13:20:12  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:20:12] "GET /api/history?limit=40 HTTP/1.1" 200 -
+13:21:06  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:21:06  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_9FF3C71A | 2026-11-18T13:21:06
+13:21:06  [INFO    ]  VoiceTriage -- ####################################################################
+13:21:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:06  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:21:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:06  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:21:06  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:21:06  [INFO    ]  Stage1-STT --   📁  File: VOICE_9FF3C71A.wav
+13:21:06  [INFO    ]  Stage1-STT -- =======================================================
+13:21:06  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:21:09  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_9FF3C71A.wav | 16000 Hz | 27.65s | (442368,)
+13:21:09  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.440)
+13:21:09  [INFO    ]  Stage1-STT -- Audio loaded: 27.65s @ 16000Hz
+13:21:09  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:21:09  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:21:13  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.1022 → 0.0782
+13:21:13  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:21:13  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:21:14  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:21:14  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:21:14  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:21:14  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+13:21:16  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:21:16  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:21:16  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:21:16  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:16  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_9FF3C71A_2026-11-18T13-21-06.json
+13:21:16  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:21:16] "POST /api/triage/voice HTTP/1.1" 200 -
+13:21:38  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:21:38  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_B25FC7E7 | 2026-11-18T13:21:38
+13:21:38  [INFO    ]  VoiceTriage -- ####################################################################
+13:21:38  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:38  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:21:38  [INFO    ]  VoiceTriage -- ====================================================================
+13:21:38  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:21:38  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:21:38  [INFO    ]  Stage1-STT --   📁  File: VOICE_B25FC7E7.wav
+13:21:38  [INFO    ]  Stage1-STT -- =======================================================
+13:21:38  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:21:38  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_B25FC7E7.wav | 16000 Hz | 27.65s | (442368,)
+13:21:38  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.440)
+13:21:38  [INFO    ]  Stage1-STT -- Audio loaded: 27.65s @ 16000Hz
+13:21:38  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:21:38  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:21:42  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.1022 → 0.0782
+13:21:42  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:21:42  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:21:42  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:21:42  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:21:42  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:21:44  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+13:22:10  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:22:12  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:22:12  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:22:12  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:12  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:22:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:13  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_B25FC7E7_2026-11-18T13-21-38.json
+13:22:13  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:22:13] "POST /api/triage/voice HTTP/1.1" 200 -
+13:22:33  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:22:33  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_A568D0BF | 2026-11-18T13:22:33
+13:22:33  [INFO    ]  VoiceTriage -- ####################################################################
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   Input (141 chars): मुझे पिछले दो घंटे से सीने में बहुत तेज़ दर्द हो रहा है। दर्द बाईं बाँह तक जा रहा है और बहुत पसीना आ
+13:22:33  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:22:33  [INFO    ]  VoiceTriage --   Keyword extracted: []
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:22:33  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:33  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_A568D0BF_2026-11-18T13-22-33.json
+13:22:33  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:22:33] "POST /api/triage/voice HTTP/1.1" 200 -
+13:22:42  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:22:42  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_0823B2E2 | 2026-11-18T13:22:42
+13:22:42  [INFO    ]  VoiceTriage -- ####################################################################
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   Input (141 chars): मुझे पिछले दो घंटे से सीने में बहुत तेज़ दर्द हो रहा है। दर्द बाईं बाँह तक जा रहा है और बहुत पसीना आ
+13:22:42  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:22:42  [INFO    ]  VoiceTriage --   Keyword extracted: []
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:22:42  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:42  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_0823B2E2_2026-11-18T13-22-42.json
+13:22:42  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:22:42] "POST /api/triage/voice HTTP/1.1" 200 -
+13:22:53  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:22:53  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_2A57CA31 | 2026-11-18T13:22:53
+13:22:53  [INFO    ]  VoiceTriage -- ####################################################################
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   Input (141 chars): मुझे पिछले दो घंटे से सीने में बहुत तेज़ दर्द हो रहा है। दर्द बाईं बाँह तक जा रहा है और बहुत पसीना आ
+13:22:53  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:22:53  [INFO    ]  VoiceTriage --   Keyword extracted: []
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:22:53  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:53  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_2A57CA31_2026-11-18T13-22-53.json
+13:22:53  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:22:53] "POST /api/triage/voice HTTP/1.1" 200 -
+13:22:59  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:22:59  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_AA6F27DE | 2026-11-18T13:22:59
+13:22:59  [INFO    ]  VoiceTriage -- ####################################################################
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   Input (148 chars): My husband's face has suddenly drooped on one side. He cannot lift his right arm and his speech is c
+13:22:59  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:22:59  [INFO    ]  VoiceTriage --   Keyword extracted: ['facial drooping', 'arm weakness', 'speech difficulty']
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   Retrieved 2 rules | Specialties: ['Neurology', 'GeneralMedicine']
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Neurology | Confidence: 99.0%
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:22:59  [INFO    ]  VoiceTriage -- ====================================================================
+13:22:59  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_AA6F27DE_2026-11-18T13-22-59.json
+13:22:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:22:59] "POST /api/triage/voice HTTP/1.1" 200 -
+13:23:05  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:23:05  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_FDDEA420 | 2026-11-18T13:23:05
+13:23:05  [INFO    ]  VoiceTriage -- ####################################################################
+13:23:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:05  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:23:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:05  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:23:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:05  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:23:05  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:05  [INFO    ]  VoiceTriage --   Input (141 chars): मुझे पिछले दो घंटे से सीने में बहुत तेज़ दर्द हो रहा है। दर्द बाईं बाँह तक जा रहा है और बहुत पसीना आ
+13:23:06  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:23:06  [INFO    ]  VoiceTriage --   Keyword extracted: []
+13:23:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:06  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:23:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:06  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:23:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:06  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:23:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:06  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:23:06  [INFO    ]  VoiceTriage -- ====================================================================
+13:23:06  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_FDDEA420_2026-11-18T13-23-05.json
+13:23:06  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:23:06] "POST /api/triage/voice HTTP/1.1" 200 -
+13:28:48  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.25.23.3:5000
+13:28:48  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+13:28:50  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:28:50] "GET / HTTP/1.1" 200 -
+13:28:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:28:51] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+13:28:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:28:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+13:28:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:28:51] "GET /api/health HTTP/1.1" 200 -
+13:28:51  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:28:51] "GET /api/cases HTTP/1.1" 200 -
+13:30:17  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:30:17  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_FFC5331E | 2026-11-18T13:30:17
+13:30:17  [INFO    ]  VoiceTriage -- ####################################################################
+13:30:17  [INFO    ]  VoiceTriage -- ====================================================================
+13:30:17  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:30:17  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:34  [INFO    ]  Stage1-STT -- 
+=======================================================
+13:31:34  [INFO    ]  Stage1-STT --   🎙️  STAGE 1: SPEECH PROCESSING STARTING
+13:31:34  [INFO    ]  Stage1-STT --   📁  File: VOICE_FFC5331E.wav
+13:31:34  [INFO    ]  Stage1-STT -- =======================================================
+13:31:34  [INFO    ]  Stage1-STT -- [ STEP 1/4 ] Loading audio...
+13:31:34  [INFO    ]  Stage1-STT -- Loaded audio: VOICE_FFC5331E.wav | 16000 Hz | 14.34s | (229376,)
+13:31:34  [INFO    ]  Stage1-STT -- Normalized audio (peak was 0.451)
+13:31:34  [INFO    ]  Stage1-STT -- Audio loaded: 14.34s @ 16000Hz
+13:31:34  [INFO    ]  Stage1-STT -- [ STEP 2/4 ] Applying noise reduction...
+13:31:34  [INFO    ]  Stage1-STT -- Applying noise reduction (stationary=True, strength=0.75)
+13:31:34  [INFO    ]  Stage1-STT -- Noise reduction complete. RMS: 0.0960 → 0.0702
+13:31:34  [INFO    ]  Stage1-STT -- [ STEP 3/4 ] Applying VAD (backend: silero)...
+13:31:34  [INFO    ]  Stage1-STT -- Applying Voice Activity Detection (Silero VAD)...
+13:31:34  [WARNING ]  Stage1-STT -- PyTorch not installed — skipping Silero VAD. Install: pip install torch
+13:31:34  [INFO    ]  Stage1-STT -- [ STEP 4/4 ] Transcribing with Whisper (base)...
+13:31:34  [INFO    ]  Stage1-STT -- Loading Whisper model: 'base' | Device: cpu | Compute: int8
+13:31:36  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+13:31:36  [INFO    ]  httpx2 -- HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+13:31:37  [ERROR   ]  Stage1-STT -- Whisper transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+Traceback (most recent call last):
+  File "D:\voicetriage\pipeline\stage1_stt.py", line 405, in transcribe_with_whisper
+    segments_gen, info = model.transcribe(
+                         ~~~~~~~~~~~~~~~~^
+        tmp_path,
+        ^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+  File "C:\Users\91936\AppData\Local\Programs\Python\Python314\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 479, in av.container.core.open
+    def open(
+TypeError: open() got an unexpected keyword argument 'metadata_errors'
+13:31:37  [INFO    ]  Stage1-STT -- ❌ STT FAILED: open() got an unexpected keyword argument 'metadata_errors'
+13:31:37  [INFO    ]  VoiceTriage --   Transcribed (Unknown): ...
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage --   Decision: ROUTINE -> GeneralMedicine | Confidence: 30.0%
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:31:37  [INFO    ]  VoiceTriage -- ====================================================================
+13:31:37  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_FFC5331E_2026-11-18T13-30-17.json
+13:31:37  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:31:37] "POST /api/triage/voice HTTP/1.1" 200 -
+13:37:56  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.25.23.3:5000
+13:37:56  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+13:37:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:37:59] "GET / HTTP/1.1" 200 -
+13:37:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:37:59] "GET /static/css/style.css HTTP/1.1" 200 -
+13:37:59  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:37:59] "GET /static/js/app.js HTTP/1.1" 200 -
+13:38:00  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:38:00] "GET /api/health HTTP/1.1" 200 -
+13:38:00  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:38:00] "GET /api/cases HTTP/1.1" 200 -
+13:39:13  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:39:13  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_1A1EDB3E837 | 2026-11-18T13:39:13
+13:39:13  [INFO    ]  VoiceTriage -- ####################################################################
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   Input (47 chars): I am having severe pain in my chest for 2 hours
+13:39:13  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:39:13  [INFO    ]  VoiceTriage --   Keyword extracted: []
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   Decision: URGENT -> GeneralMedicine | Confidence: 30.0%
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:13  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:39:13  [INFO    ]  VoiceTriage -- ====================================================================
+13:39:14  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_1A1EDB3E837_2026-11-18T13-39-13.json
+13:39:14  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:39:14] "POST /api/triage/text HTTP/1.1" 200 -
+13:40:31  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:40:31  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_1A1EDB51998 | 2026-11-18T13:40:31
+13:40:31  [INFO    ]  VoiceTriage -- ####################################################################
+13:40:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:31  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:40:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:31  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:40:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:31  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:40:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:31  [INFO    ]  VoiceTriage --   Input (47 chars): I am having headache a month and after function
+13:40:32  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:40:32  [INFO    ]  VoiceTriage --   Keyword extracted: ['headache']
+13:40:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:32  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:40:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:32  [INFO    ]  VoiceTriage --   Retrieved 3 rules | Specialties: ['Neurology', 'Gynecology', 'GeneralMedicine']
+13:40:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:32  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:40:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:32  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Neurology | Confidence: 98.0%
+13:40:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:32  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:40:32  [INFO    ]  VoiceTriage -- ====================================================================
+13:40:32  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_1A1EDB51998_2026-11-18T13-40-31.json
+13:40:32  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:40:32] "POST /api/triage/text HTTP/1.1" 200 -
+13:41:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:41:26] "GET / HTTP/1.1" 200 -
+13:41:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:41:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+13:41:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:41:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+13:41:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:41:26] "GET /api/health HTTP/1.1" 200 -
+13:41:26  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:41:26] "GET /api/cases HTTP/1.1" 200 -
+13:42:30  [INFO    ]  VoiceTriage -- 
+####################################################################
+13:42:30  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_1A1EDB6EB99 | 2026-11-18T13:42:30
+13:42:30  [INFO    ]  VoiceTriage -- ####################################################################
+13:42:30  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:30  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+13:42:30  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:30  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+13:42:30  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:30  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+13:42:30  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:30  [INFO    ]  VoiceTriage --   Input (32 chars): I am having headache for 2 hours
+13:42:31  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+13:42:31  [INFO    ]  VoiceTriage --   Keyword extracted: ['headache']
+13:42:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:31  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+13:42:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:31  [INFO    ]  VoiceTriage --   Retrieved 3 rules | Specialties: ['Neurology', 'Gynecology', 'GeneralMedicine']
+13:42:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:31  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+13:42:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:31  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Neurology | Confidence: 98.0%
+13:42:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:31  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+13:42:31  [INFO    ]  VoiceTriage -- ====================================================================
+13:42:31  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_1A1EDB6EB99_2026-11-18T13-42-30.json
+13:42:31  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 13:42:31] "POST /api/triage/text HTTP/1.1" 200 -
+16:40:00  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+16:40:00  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+16:40:02  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:40:02] "GET / HTTP/1.1" 200 -
+16:40:03  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:40:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+16:40:03  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:40:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+16:40:03  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:40:03] "GET /api/health HTTP/1.1" 200 -
+16:40:03  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:40:03] "GET /api/cases HTTP/1.1" 200 -
+16:51:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:51:07] "GET / HTTP/1.1" 200 -
+16:51:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:51:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+16:51:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:51:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+16:51:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:51:07] "GET /api/health HTTP/1.1" 200 -
+16:51:07  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 16:51:07] "GET /api/cases HTTP/1.1" 200 -
+18:26:35  [INFO    ]  VoiceTriage -- 
+####################################################################
+18:26:35  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: VOICE_1A1EEBAFC8F | 2026-11-18T18:26:35
+18:26:35  [INFO    ]  VoiceTriage -- ####################################################################
+18:26:35  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:35  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+18:26:35  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:36  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+18:26:36  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:36  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+18:26:36  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:36  [INFO    ]  VoiceTriage --   Input (148 chars): My husband's face has suddenly drooped on one side. He cannot lift his right arm and his speech is c
+18:26:37  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+18:26:38  [INFO    ]  VoiceTriage --   Keyword extracted: ['facial drooping', 'arm weakness', 'speech difficulty']
+18:26:38  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:38  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+18:26:39  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:39  [INFO    ]  VoiceTriage --   Retrieved 2 rules | Specialties: ['Neurology', 'GeneralMedicine']
+18:26:39  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:39  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+18:26:39  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:39  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Neurology | Confidence: 99.0%
+18:26:39  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:39  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+18:26:39  [INFO    ]  VoiceTriage -- ====================================================================
+18:26:40  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\VOICE_1A1EEBAFC8F_2026-11-18T18-26-35.json
+18:26:40  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 18:26:40] "POST /api/triage/text HTTP/1.1" 200 -
+22:09:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:28] "GET / HTTP/1.1" 200 -
+22:09:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+22:09:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+22:09:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:28] "GET /api/health HTTP/1.1" 200 -
+22:09:28  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:28] "GET /api/cases HTTP/1.1" 200 -
+22:09:50  [INFO    ]  werkzeug -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.35:5000
+22:09:50  [INFO    ]  werkzeug -- [33mPress CTRL+C to quit[0m
+22:09:52  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:52] "GET / HTTP/1.1" 200 -
+22:09:53  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+22:09:53  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:53] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+22:09:53  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:53] "GET /api/health HTTP/1.1" 200 -
+22:09:53  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:09:53] "GET /api/cases HTTP/1.1" 200 -
+22:10:09  [INFO    ]  VoiceTriage -- 
+####################################################################
+22:10:09  [INFO    ]  VoiceTriage -- #  VoiceTriage Pipeline | Case: API_E02665DC | 2026-11-18T22:10:09
+22:10:09  [INFO    ]  VoiceTriage -- ####################################################################
+22:10:09  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:09  [INFO    ]  VoiceTriage --   STAGE 1 -- SPEECH PROCESSING
+22:10:09  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:09  [INFO    ]  VoiceTriage --   [BYPASS] Pre-supplied transcript -- skipping audio pipeline
+22:10:09  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:09  [INFO    ]  VoiceTriage --   STAGE 2 -- NLP & SYMPTOM EXTRACTION
+22:10:09  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:09  [INFO    ]  VoiceTriage --   Input (151 chars): I have been having severe crushing chest pain for the past two hours. The pain radiates to my left a
+22:10:10  [WARNING ]  VoiceTriage --   Ollama unavailable -- using keyword fallback
+22:10:10  [INFO    ]  VoiceTriage --   Keyword extracted: ['chest pain', 'left arm pain', 'breathlessness', 'sweating']
+22:10:10  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:10  [INFO    ]  VoiceTriage --   STAGE 3 -- MEDICAL KNOWLEDGE LAYER (RAG)
+22:10:10  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:10  [INFO    ]  VoiceTriage --   Retrieved 3 rules | Specialties: ['Cardiology', 'Pulmonology', 'Endocrinology']
+22:10:10  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:10  [INFO    ]  VoiceTriage --   STAGE 4 -- DECISION ENGINE
+22:10:10  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:10  [INFO    ]  VoiceTriage --   Decision: EMERGENCY -> Cardiology | Confidence: 99.0%
+22:10:10  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:10  [INFO    ]  VoiceTriage --   STAGE 5 -- OUTPUT & DASHBOARD
+22:10:10  [INFO    ]  VoiceTriage -- ====================================================================
+22:10:10  [INFO    ]  VoiceTriage --   Saved: D:\voicetriage\output\API_E02665DC_2026-11-18T22-10-09.json
+22:10:10  [INFO    ]  werkzeug -- 127.0.0.1 - - [18/Nov/2026 22:10:10] "POST /api/triage/text HTTP/1.1" 200 -

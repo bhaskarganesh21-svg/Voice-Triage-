@@ -1,0 +1,37 @@
+{
+  "case_id": "VOICE_1A1EEBAFC8F",
+  "timestamp": "2026-11-18T18:26:35",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 3.917,
+  "transcript": "My husband's face has suddenly drooped on one side. He cannot lift his right arm and his speech is completely slurred. This started ten minutes ago.",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Neurology",
+  "symptoms": [
+    "facial drooping",
+    "arm weakness",
+    "speech difficulty"
+  ],
+  "duration": "unknown",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "male",
+  "confidence_score": 0.99,
+  "explanation": "Patient described: facial drooping, arm weakness, speech difficulty. Severity: mild. Red flags: neurological_emergency. Multi-symptom rules: Stroke FAST. Classified EMERGENCY -- Neurology required immediately.",
+  "red_flags_triggered": [
+    "neurological_emergency [triggered: facial drooping, arm weakness]"
+  ],
+  "rule_ids_matched": [
+    "P-NEURO-01",
+    "RF-NEUROLOGICAL_EMERGENCY",
+    "CR-02"
+  ],
+  "rag_rules_retrieved": [
+    "RF-NEUROLOGICAL_EMERGENCY",
+    "P-NEURO-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

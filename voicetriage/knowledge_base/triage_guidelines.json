@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "source": "MoHFW eSanjeevani Teleconsultation Protocol, WHO Primary Care Guidelines, AIIMS Triage Manual",
+    "description": "Official triage protocol rules used for RAG cross-validation",
+    "last_updated": "2024-01"
+  },
+
+  "triage_framework": {
+    "name": "eSanjeevani Triage Protocol v1",
+    "levels": {
+      "EMERGENCY": {
+        "code": "P1",
+        "color": "Red",
+        "response": "Immediate",
+        "description": "Life-threatening. Patient needs emergency services NOW."
+      },
+      "URGENT": {
+        "code": "P2",
+        "color": "Yellow",
+        "response": "Within 60 minutes",
+        "description": "Potentially serious. Risk of deterioration if untreated."
+      },
+      "ROUTINE": {
+        "code": "P3",
+        "color": "Green",
+        "response": "Within 24 hours",
+        "description": "Non-urgent. Can wait for scheduled appointment."
+      }
+    }
+  },
+
+  "protocols": [
+    {
+      "protocol_id": "P-CARD-01",
+      "title": "Acute Chest Pain Protocol",
+      "specialty": "Cardiology",
+      "urgency": "EMERGENCY",
+      "criteria": "Any patient describing chest pain, especially with: radiation to arm/jaw, sweating, breathlessness, or nausea.",
+      "action": "Immediately escalate. Advise patient not to exert. Alert emergency services if available.",
+      "key_questions": [
+        "Is the pain constant or does it come and go?",
+        "Does the pain go to your arm or jaw?",
+        "Are you sweating more than usual?",
+        "Are you finding it hard to breathe?",
+        "Do you have a known heart condition?"
+      ],
+      "contraindications": "Do NOT reassure and dismiss. Every chest pain in adults >35 is cardiac until proven otherwise."
+    },
+    {
+      "protocol_id": "P-NEURO-01",
+      "title": "Stroke Recognition Protocol (FAST)",
+      "specialty": "Neurology",
+      "urgency": "EMERGENCY",
+      "criteria": "Sudden onset of: Face drooping, Arm weakness, Speech difficulty, at any Time.",
+      "action": "Call emergency services immediately. Time to treatment is critical — every minute of stroke = 1.9 million neurons lost.",
+      "key_questions": [
+        "Did this happen suddenly?",
+        "Is one side of their face drooping?",
+        "Can they lift both arms equally?",
+        "Is their speech unclear or strange?"
+      ],
+      "contraindications": "Never wait to see if symptoms resolve. TIA can precede full stroke."
+    },
+    {
+      "protocol_id": "P-RESP-01",
+      "title": "Respiratory Distress Protocol",
+      "specialty": "Pulmonology",
+      "urgency": "EMERGENCY",
+      "criteria": "Patient unable to complete sentences due to breathlessness, bluish lips, or SpO2 < 90%.",
+      "action": "Emergency escalation. Sitting upright, open airway. Alert emergency services.",
+      "key_questions": [
+        "Can you speak a full sentence without stopping to breathe?",
+        "Are your lips or fingertips turning blue?",
+        "Do you have an oximeter reading?"
+      ],
+      "contraindications": "Do not put patient on hold. Keep call open."
+    },
+    {
+      "protocol_id": "P-FEVER-01",
+      "title": "High Fever with Warning Signs Protocol",
+      "specialty": "GeneralMedicine",
+      "urgency": "URGENT",
+      "criteria": "Fever > 38.5°C (101.3°F) with: altered consciousness, stiff neck, rash, or not responding to antipyretics.",
+      "action": "Urgent consultation. If confusion present, escalate to Emergency.",
+      "key_questions": [
+        "How high is the fever?",
+        "Is the patient confused or difficult to wake?",
+        "Is there any rash?",
+        "Is the neck stiff?",
+        "Has fever lasted more than 3 days?"
+      ],
+      "contraindications": "High fever in infants <3 months = EMERGENCY regardless of other signs."
+    },
+    {
+      "protocol_id": "P-OBS-01",
+      "title": "Obstetric Emergency Protocol",
+      "specialty": "Gynecology",
+      "urgency": "EMERGENCY",
+      "criteria": "Pregnant patient with: heavy vaginal bleeding, severe abdominal pain, seizures, or absent fetal movement.",
+      "action": "Emergency escalation. Advise patient to lie on left side. Alert emergency services.",
+      "key_questions": [
+        "How many months pregnant are you?",
+        "Is there heavy bleeding?",
+        "Is the pain constant or in waves?",
+        "Can you feel the baby moving?",
+        "Do you have high blood pressure?"
+      ],
+      "contraindications": "Never reassure pregnant patient with bleeding — always escalate."
+    },
+    {
+      "protocol_id": "P-PED-01",
+      "title": "Pediatric Emergency Protocol",
+      "specialty": "Pediatrics",
+      "urgency": "EMERGENCY",
+      "criteria": "Child under 5 with: high fever (>39°C), seizure, difficulty breathing, not feeding, or altered consciousness.",
+      "action": "Emergency escalation for infants. Urgent for older children.",
+      "key_questions": [
+        "How old is the child?",
+        "What is the temperature?",
+        "Is the child responsive?",
+        "Is the child eating/drinking?",
+        "Has the child had a fit?"
+      ],
+      "contraindications": "All fevers in newborns (<28 days) are EMERGENCY."
+    },
+    {
+      "protocol_id": "P-PSYCH-01",
+      "title": "Mental Health Crisis Protocol",
+      "specialty": "Psychiatry",
+      "urgency": "EMERGENCY",
+      "criteria": "Patient expresses: suicidal thoughts, plan to harm self or others, or has already attempted self-harm.",
+      "action": "Emergency escalation. Do NOT leave patient alone. Contact emergency services.",
+      "key_questions": [
+        "Are you having thoughts of hurting yourself?",
+        "Do you have a plan?",
+        "Have you tried to hurt yourself before?",
+        "Is anyone with you right now?"
+      ],
+      "contraindications": "Never dismiss suicidal ideation. Always take seriously."
+    },
+    {
+      "protocol_id": "P-DM-01",
+      "title": "Diabetic Emergency Protocol",
+      "specialty": "Endocrinology",
+      "urgency": "EMERGENCY",
+      "criteria": "Known diabetic with: altered consciousness, blood sugar <50 mg/dL, or inability to take oral intake.",
+      "action": "If conscious: give sugar immediately. If unconscious: emergency services.",
+      "key_questions": [
+        "Is the patient a known diabetic?",
+        "What is the blood sugar reading?",
+        "Is the patient conscious and able to swallow?",
+        "Has the patient taken insulin recently?"
+      ],
+      "contraindications": "Never give anything by mouth to an unconscious patient."
+    },
+    {
+      "protocol_id": "P-INF-01",
+      "title": "Suspected Infectious Disease Protocol",
+      "specialty": "GeneralMedicine",
+      "urgency": "URGENT",
+      "criteria": "Patient with: fever + rash, or fever + bleeding, or fever + severe myalgia (dengue suspicion), or cough >2 weeks + night sweats (TB suspicion).",
+      "action": "Urgent consultation. If hemorrhagic signs present, escalate to Emergency.",
+      "key_questions": [
+        "How long has the fever lasted?",
+        "Any bleeding from nose, gums, or in urine/stool?",
+        "Any rash on body?",
+        "Any recent travel to endemic areas?"
+      ],
+      "contraindications": "Dengue with bleeding = Emergency, not Urgent."
+    },
+    {
+      "protocol_id": "P-GI-01",
+      "title": "Acute Abdominal Emergency Protocol",
+      "specialty": "Gastroenterology",
+      "urgency": "EMERGENCY",
+      "criteria": "Severe abdominal pain with: rigidity, vomiting blood, or blood in stool with hypotension signs.",
+      "action": "Emergency escalation. Keep patient nil by mouth. Emergency services.",
+      "key_questions": [
+        "Is the pain constant or wave-like?",
+        "Is the stomach hard and rigid?",
+        "Any vomiting or blood in stool?",
+        "Any recent surgery or injury to abdomen?"
+      ],
+      "contraindications": "Do not give painkillers without doctor consultation — may mask signs."
+    }
+  ],
+
+  "specialty_routing_guide": {
+    "description": "Quick reference for routing calls to correct department",
+    "routing": {
+      "Cardiology": ["chest pain", "palpitations", "heart disease", "hypertension", "edema"],
+      "Neurology": ["seizures", "stroke", "headache", "dizziness", "paralysis", "memory loss"],
+      "Pulmonology": ["breathing difficulty", "cough", "TB", "asthma", "COPD"],
+      "Gastroenterology": ["abdominal pain", "vomiting", "diarrhea", "jaundice", "bleeding GI"],
+      "Orthopedics": ["joint pain", "fracture", "back pain", "sports injury"],
+      "Dermatology": ["rash", "skin infection", "hair loss", "skin allergy"],
+      "Psychiatry": ["depression", "anxiety", "suicidal thoughts", "psychosis"],
+      "Gynecology": ["period problems", "pregnancy", "vaginal symptoms", "breast"],
+      "Urology": ["urine problems", "kidney stone", "prostate"],
+      "Pediatrics": ["child <15 years with any symptom"],
+      "ENT": ["ear pain", "nose bleed", "throat", "hearing loss"],
+      "Ophthalmology": ["eye pain", "vision loss", "eye redness"],
+      "Endocrinology": ["diabetes", "thyroid", "hormonal"],
+      "GeneralMedicine": ["fever", "fatigue", "cold", "general symptoms"],
+      "Emergency": ["trauma", "unconscious", "severe bleeding", "poisoning"]
+    }
+  }
+}

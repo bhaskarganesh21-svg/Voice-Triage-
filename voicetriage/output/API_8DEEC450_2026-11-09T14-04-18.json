@@ -1,0 +1,38 @@
+{
+  "case_id": "API_8DEEC450",
+  "timestamp": "2026-11-09T14:04:18",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 4.233,
+  "transcript": "Mere sar mein bahut tez dard ho raha hai aur behosh ho gaya tha",
+  "detected_language": "Hindi",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Emergency",
+  "symptoms": [
+    "unconscious"
+  ],
+  "duration": "unknown",
+  "severity": "severe",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.98,
+  "explanation": "Patient described: unconscious. Severity: severe. Red flags: trauma_emergency, pediatric_emergency. Classified EMERGENCY -- Emergency required immediately.",
+  "red_flags_triggered": [
+    "trauma_emergency [triggered: unconscious]",
+    "pediatric_emergency [triggered: unconscious]",
+    "diabetic_emergency [triggered: unconscious]"
+  ],
+  "rule_ids_matched": [
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-DIABETIC_EMERGENCY",
+    "RF-TRAUMA_EMERGENCY"
+  ],
+  "rag_rules_retrieved": [
+    "RF-TRAUMA_EMERGENCY",
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-DIABETIC_EMERGENCY"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

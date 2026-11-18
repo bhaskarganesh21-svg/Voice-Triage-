@@ -1,0 +1,34 @@
+{
+  "case_id": "API_4889D639",
+  "timestamp": "2026-11-18T13:19:31",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.912,
+  "transcript": "i am having chest pain and non concious since 2 hours",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Cardiology",
+  "symptoms": [
+    "chest pain"
+  ],
+  "duration": "2 hours",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.7799999999999999,
+  "explanation": "Patient described: chest pain. Duration: 2 hours. Severity: mild. Red flags: cardiac_emergency. Classified EMERGENCY -- Cardiology required immediately.",
+  "red_flags_triggered": [
+    "cardiac_emergency [triggered: chest pain]"
+  ],
+  "rule_ids_matched": [
+    "P-CARD-01",
+    "RF-CARDIAC_EMERGENCY"
+  ],
+  "rag_rules_retrieved": [
+    "RF-CARDIAC_EMERGENCY",
+    "P-CARD-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}

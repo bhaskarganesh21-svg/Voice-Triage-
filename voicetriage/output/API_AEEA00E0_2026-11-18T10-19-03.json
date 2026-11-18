@@ -1,0 +1,44 @@
+{
+  "case_id": "API_AEEA00E0",
+  "timestamp": "2026-11-18T10:19:03",
+  "pipeline_version": "1.0.0",
+  "total_time_seconds": 0.541,
+  "transcript": "i am having Fever and nose running in these 2-3 days",
+  "detected_language": "English",
+  "urgency_level": "EMERGENCY",
+  "urgency_color": "RED",
+  "suggested_specialty": "Pediatrics",
+  "symptoms": [
+    "fever"
+  ],
+  "duration": "3 days",
+  "severity": "mild",
+  "existing_diseases": [],
+  "age": null,
+  "gender": "unknown",
+  "confidence_score": 0.98,
+  "explanation": "Patient described: fever. Duration: 3 days. Severity: mild. Red flags: pediatric_emergency, urgent_fever. Classified EMERGENCY -- Pediatrics required immediately.",
+  "red_flags_triggered": [
+    "pediatric_emergency [triggered: fever]",
+    "urgent_fever [triggered: fever]",
+    "severe_pain [triggered: fever]"
+  ],
+  "rule_ids_matched": [
+    "P-FEVER-01",
+    "RF-URGENT_FEVER",
+    "P-PED-01",
+    "RF-SEVERE_PAIN",
+    "P-INF-01",
+    "RF-PEDIATRIC_EMERGENCY"
+  ],
+  "rag_rules_retrieved": [
+    "RF-PEDIATRIC_EMERGENCY",
+    "RF-URGENT_FEVER",
+    "RF-SEVERE_PAIN",
+    "P-FEVER-01",
+    "P-PED-01",
+    "P-INF-01"
+  ],
+  "stt_model": "bypass",
+  "llm_model": "keyword_fallback"
+}
